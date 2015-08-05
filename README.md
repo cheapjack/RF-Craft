@@ -16,7 +16,7 @@ Possible messages:
  *  2 : error
  *  3 : OK
 
-common key for messages: "TBD"
+common key for messages: "changemechangeme"
 all radios are in group: 87
 node_ids for buttons: 1-100
 node_id for the receiver hub: 254
