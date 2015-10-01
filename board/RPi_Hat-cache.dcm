@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP FTDI_CONN_01X06
+D FTDI  connector 1×6
+$ENDCMP
+#
+#End Doc Library
