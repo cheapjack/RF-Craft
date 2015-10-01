@@ -1,0 +1,14 @@
+# ano
+.build_ano
+
+# kicad
+# temp files
+*.bak
+*.bck
+*.kicad_pcb-bak
+*-cache.lib
+# *-rescue.lib
+ftp-lib-table
+
+# for external tools
+*.dsn
