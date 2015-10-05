@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/patrick/Projects/cheapjack/RFcrafting/board/RPi_Hat.sch)
-    (date "Fri 02 Oct 2015 14:51:07 BST")
+    (date "Mon 05 Oct 2015 16:36:14 BST")
     (tool "Eeschema 4.0.0-rc1-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -147,7 +147,7 @@
       (sheetpath (names /RPi_GPIO/) (tstamps /5515D395/))
       (tstamp 560D9C7B))
     (comp (ref R3)
-      (value 560R)
+      (value 75R)
       (footprint Resistors_SMD:R_0603_HandSoldering)
       (libsource (lib device) (part R_Small))
       (sheetpath (names /RPi_GPIO/) (tstamps /5515D395/))
@@ -208,41 +208,28 @@
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
-    (libpart (lib conn) (part CONN_01X02)
-      (footprints
-        (fp Pin_Header_Straight_1X02)
-        (fp Pin_Header_Angled_1X02)
-        (fp Socket_Strip_Straight_1X02)
-        (fp Socket_Strip_Angled_1X02))
+    (libpart (lib RPi_Hat-cache) (part TC1108)
       (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X02))
+        (field (name Reference) I)
+        (field (name Value) TC1108))
       (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))))
-    (libpart (lib device) (part Crystal_Small)
-      (description "Two pin crystal")
+        (pin (num 1) (name V_IN) (type power_in))
+        (pin (num 2) (name GND) (type power_out))
+        (pin (num 3) (name V_OUT) (type power_out))))
+    (libpart (lib device) (part C)
+      (description "Unpolarized capacitor")
       (footprints
-        (fp Crystal_))
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
       (fields
-        (field (name Reference) Y)
-        (field (name Value) Crystal_Small))
+        (field (name Reference) C)
+        (field (name Value) C))
       (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib conn) (part CONN_01X03)
-      (footprints
-        (fp Pin_Header_Straight_1X03)
-        (fp Pin_Header_Angled_1X03)
-        (fp Socket_Strip_Straight_1X03)
-        (fp Socket_Strip_Angled_1X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))))
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib RPi_Hat-cache) (part FTDI_CONN_01X06)
       (description "FTDI  connector 1×6")
       (footprints
@@ -260,22 +247,6 @@
         (pin (num 4) (name TXI) (type passive))
         (pin (num 5) (name RXI) (type passive))
         (pin (num 6) (name DTR) (type passive))))
-    (libpart (lib conn) (part CONN_02X03)
-      (footprints
-        (fp Pin_Header_Straight_2X03)
-        (fp Pin_Header_Angled_2X03)
-        (fp Socket_Strip_Straight_2X03)
-        (fp Socket_Strip_Angled_2X03))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_02X03))
-      (pins
-        (pin (num 1) (name P1) (type passive))
-        (pin (num 2) (name P2) (type passive))
-        (pin (num 3) (name P3) (type passive))
-        (pin (num 4) (name P4) (type passive))
-        (pin (num 5) (name P5) (type passive))
-        (pin (num 6) (name P6) (type passive))))
     (libpart (lib RPi_Hat-cache) (part RFM69HW)
       (fields
         (field (name Reference) IC)
@@ -342,14 +313,103 @@
         (pin (num 38) (name GPIO20) (type BiDi))
         (pin (num 39) (name GND) (type power_in))
         (pin (num 40) (name GPIO21) (type BiDi))))
-    (libpart (lib RPi_Hat-cache) (part TC1108)
+    (libpart (lib device) (part Led_Small)
+      (description Led)
+      (footprints
+        (fp CP*)
+        (fp SM*))
       (fields
-        (field (name Reference) I)
-        (field (name Value) TC1108))
+        (field (name Reference) D)
+        (field (name Value) Led_Small))
       (pins
-        (pin (num 1) (name V_IN) (type power_in))
-        (pin (num 2) (name GND) (type power_out))
-        (pin (num 3) (name V_OUT) (type power_out))))
+        (pin (num 1) (name K) (type passive))
+        (pin (num 2) (name A) (type passive))))
+    (libpart (lib device) (part R_Small)
+      (description Resistor)
+      (footprints
+        (fp Resistor_*)
+        (fp R_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R_Small))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part Q_NMOS_GSD)
+      (description "Transistor N-MOSFET (general)")
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) Q_NMOS_GSD))
+      (pins
+        (pin (num 1) (name G) (type input))
+        (pin (num 2) (name S) (type passive))
+        (pin (num 3) (name D) (type passive))))
+    (libpart (lib conn) (part CONN_01X02)
+      (footprints
+        (fp Pin_Header_Straight_1X02)
+        (fp Pin_Header_Angled_1X02)
+        (fp Socket_Strip_Straight_1X02)
+        (fp Socket_Strip_Angled_1X02))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X02))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))))
+    (libpart (lib conn) (part CONN_01X03)
+      (footprints
+        (fp Pin_Header_Straight_1X03)
+        (fp Pin_Header_Angled_1X03)
+        (fp Socket_Strip_Straight_1X03)
+        (fp Socket_Strip_Angled_1X03))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X03))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))))
+    (libpart (lib device) (part C_Small)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C_Small))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib conn) (part CONN_01X01)
+      (footprints
+        (fp Pin_Header_Straight_1X01)
+        (fp Pin_Header_Angled_1X01)
+        (fp Socket_Strip_Straight_1X01)
+        (fp Socket_Strip_Angled_1X01))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X01))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
+    (libpart (lib conn) (part CONN_02X03)
+      (footprints
+        (fp Pin_Header_Straight_2X03)
+        (fp Pin_Header_Angled_2X03)
+        (fp Socket_Strip_Straight_2X03)
+        (fp Socket_Strip_Angled_2X03))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_02X03))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name P2) (type passive))
+        (pin (num 3) (name P3) (type passive))
+        (pin (num 4) (name P4) (type passive))
+        (pin (num 5) (name P5) (type passive))
+        (pin (num 6) (name P6) (type passive))))
     (libpart (lib atmel) (part ATMEGA168A-P)
       (aliases
         (alias ATMEGA48A-P)
@@ -412,85 +472,25 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part Led_Small)
-      (description Led)
+    (libpart (lib device) (part Crystal_Small)
+      (description "Two pin crystal")
       (footprints
-        (fp CP*)
-        (fp SM*))
+        (fp Crystal_))
       (fields
-        (field (name Reference) D)
-        (field (name Value) Led_Small))
+        (field (name Reference) Y)
+        (field (name Value) Crystal_Small))
       (pins
-        (pin (num 1) (name K) (type passive))
-        (pin (num 2) (name A) (type passive))))
-    (libpart (lib conn) (part CONN_01X01)
-      (footprints
-        (fp Pin_Header_Straight_1X01)
-        (fp Pin_Header_Angled_1X01)
-        (fp Socket_Strip_Straight_1X01)
-        (fp Socket_Strip_Angled_1X01))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X01))
-      (pins
-        (pin (num 1) (name P1) (type passive))))
-    (libpart (lib device) (part C)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part Q_NMOS_GSD)
-      (description "Transistor N-MOSFET (general)")
-      (fields
-        (field (name Reference) Q)
-        (field (name Value) Q_NMOS_GSD))
-      (pins
-        (pin (num 1) (name G) (type input))
-        (pin (num 2) (name S) (type passive))
-        (pin (num 3) (name D) (type passive))))
-    (libpart (lib device) (part R_Small)
-      (description Resistor)
-      (footprints
-        (fp Resistor_*)
-        (fp R_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R_Small))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib device) (part C_Small)
-      (description "Unpolarized capacitor")
-      (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) C_Small))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive)))))
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive)))))
   (libraries
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
     (library (logical atmel)
       (uri /usr/share/kicad/library/atmel.lib))
     (library (logical RPi_Hat-cache)
-      (uri /home/patrick/Projects/cheapjack/RFcrafting/board/RPi_Hat-cache.lib))
-    (library (logical device)
-      (uri /usr/share/kicad/library/device.lib))
-    (library (logical conn)
-      (uri /usr/share/kicad/library/conn.lib)))
+      (uri /home/patrick/Projects/cheapjack/RFcrafting/board/RPi_Hat-cache.lib)))
   (nets
     (net (code 1) (name GND)
       (node (ref J1) (pin 30))
