@@ -12,3 +12,7 @@ ftp-lib-table
 
 # for external tools
 *.dsn
+
+# swap files
+*.swp
+*~
