@@ -9,6 +9,10 @@
 *-cache.lib
 # *-rescue.lib
 ftp-lib-table
+board/_autosave*
+
+# zipped up gerbers
+board/gerbers/*.zip
 
 # for external tools
 *.dsn
