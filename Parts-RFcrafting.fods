@@ -1,0 +1,1975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<office:document xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rpt="http://openoffice.org/2005/report" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" office:version="1.2" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
+ <office:meta><dc:date>2015-10-22T17:20:07.917015627</dc:date><dc:creator>patrick </dc:creator><meta:generator>LibreOffice/4.2.8.2$Linux_x86 LibreOffice_project/420m0$Build-2</meta:generator><meta:editing-duration>P0D</meta:editing-duration><meta:editing-cycles>1</meta:editing-cycles><meta:document-statistic meta:table-count="1" meta:cell-count="516" meta:object-count="0"/></office:meta>
+ <office:settings>
+  <config:config-item-set config:name="ooo:view-settings">
+   <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">878</config:config-item>
+   <config:config-item config:name="VisibleAreaWidth" config:type="int">53243</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">16255</config:config-item>
+   <config:config-item-map-indexed config:name="Views">
+    <config:config-item-map-entry>
+     <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
+     <config:config-item-map-named config:name="Tables">
+      <config:config-item-map-entry config:name="Sheet2">
+       <config:config-item config:name="CursorPositionX" config:type="int">7</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">1</config:config-item>
+       <config:config-item config:name="HorizontalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="VerticalSplitMode" config:type="short">0</config:config-item>
+       <config:config-item config:name="HorizontalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="VerticalSplitPosition" config:type="int">0</config:config-item>
+       <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">2</config:config-item>
+       <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">0</config:config-item>
+       <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+       <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+       <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+       <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+      </config:config-item-map-entry>
+     </config:config-item-map-named>
+     <config:config-item config:name="ActiveTable" config:type="string">Sheet2</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">270</config:config-item>
+     <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
+     <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
+     <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
+     <config:config-item config:name="ShowPageBreakPreview" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="GridColor" config:type="long">12632256</config:config-item>
+     <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+     <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+     <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+     <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
+     <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+     <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+     <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+    </config:config-item-map-entry>
+   </config:config-item-map-indexed>
+  </config:config-item-set>
+  <config:config-item-set config:name="ooo:configuration-settings">
+   <config:config-item config:name="EmbedFonts" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsKernAsianPunctuation" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="IsDocumentShared" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="AutoCalculate" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">lAH+/0NvbG9yLUxhc2VySmV0LTI2MDVkbgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpDb2xvci1MYXNlckpldC0yNjA1ZG4AAAAAAAAWAAMAugAAAAAAAAAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9Q29sb3ItTGFzZXJKZXQtMjYwNWRuCm9yaWVudGF0aW9uPVBvcnRyYWl0CmNvcGllcz0xCmNvbGxhdGU9ZmFsc2UKbWFyZ2luZGFqdXN0bWVudD0wLDAsMCwwCmNvbG9yZGVwdGg9MjQKcHNsZXZlbD0wCnBkZmRldmljZT0xCmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4RGF0YQpQYWdlU2l6ZTpBNAAAEgBDT01QQVRfRFVQTEVYX01PREUKAERVUExFWF9PRkY=</config:config-item>
+   <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="PrinterName" config:type="string">Color-LaserJet-2605dn</config:config-item>
+   <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
+   <config:config-item config:name="IsRasterAxisSynchronized" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
+   <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
+   <config:config-item config:name="IsSnapToRaster" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="HasColumnRowHeaders" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RasterSubdivisionX" config:type="int">1</config:config-item>
+   <config:config-item config:name="GridColor" config:type="long">12632256</config:config-item>
+   <config:config-item config:name="ShowZeroValues" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="RasterSubdivisionY" config:type="int">1</config:config-item>
+   <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
+   <config:config-item config:name="ApplyUserData" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="LinkUpdateMode" config:type="short">3</config:config-item>
+   <config:config-item config:name="IsOutlineSymbolsSet" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="AllowPrintJobCancel" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowGrid" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowPageBreaks" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="HasSheetTabs" config:type="boolean">true</config:config-item>
+   <config:config-item config:name="ShowNotes" config:type="boolean">true</config:config-item>
+  </config:config-item-set>
+ </office:settings>
+ <office:scripts>
+  <office:script script:language="ooo:Basic">
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+  </office:script>
+ </office:scripts>
+ <office:font-face-decls>
+  <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="swiss" style:font-pitch="variable"/>
+  <style:font-face style:name="DejaVu Sans" svg:font-family="&apos;DejaVu Sans&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="Droid Sans Fallback" svg:font-family="&apos;Droid Sans Fallback&apos;" style:font-family-generic="system" style:font-pitch="variable"/>
+  <style:font-face style:name="FreeSans" svg:font-family="FreeSans" style:font-family-generic="system" style:font-pitch="variable"/>
+ </office:font-face-decls>
+ <office:styles>
+  <style:default-style style:family="table-cell">
+   <style:paragraph-properties style:tab-stop-distance="1.25cm"/>
+   <style:text-properties style:font-name="Liberation Sans" fo:language="en" fo:country="GB" style:font-name-asian="DejaVu Sans" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="DejaVu Sans" style:language-complex="hi" style:country-complex="IN"/>
+  </style:default-style>
+  <number:number-style style:name="N0">
+   <number:number number:min-integer-digits="1"/>
+  </number:number-style>
+  <number:currency-style style:name="N104P0" style:volatile="true">
+   <number:currency-symbol number:language="en" number:country="GB">£</number:currency-symbol>
+   <number:number number:decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
+  </number:currency-style>
+  <number:currency-style style:name="N104">
+   <style:text-properties fo:color="#ff0000"/>
+   <number:text>-</number:text>
+   <number:currency-symbol number:language="en" number:country="GB">£</number:currency-symbol>
+   <number:number number:decimal-places="2" number:min-integer-digits="1" number:grouping="true"/>
+   <style:map style:condition="value()&gt;=0" style:apply-style-name="N104P0"/>
+  </number:currency-style>
+  <style:style style:name="Default" style:family="table-cell">
+   <style:text-properties style:font-name-asian="Droid Sans Fallback" style:font-family-asian="&apos;Droid Sans Fallback&apos;" style:font-family-generic-asian="system" style:font-pitch-asian="variable" style:font-name-complex="FreeSans" style:font-family-complex="FreeSans" style:font-family-generic-complex="system" style:font-pitch-complex="variable"/>
+  </style:style>
+  <style:style style:name="Result" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-style="italic" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Result2" style:family="table-cell" style:parent-style-name="Result" style:data-style-name="N104"/>
+  <style:style style:name="Heading" style:family="table-cell" style:parent-style-name="Default">
+   <style:table-cell-properties style:text-align-source="fix" style:repeat-content="false"/>
+   <style:paragraph-properties fo:text-align="center"/>
+   <style:text-properties fo:font-size="16pt" fo:font-style="italic" fo:font-weight="bold"/>
+  </style:style>
+  <style:style style:name="Heading1" style:family="table-cell" style:parent-style-name="Heading">
+   <style:table-cell-properties style:rotation-angle="90"/>
+  </style:style>
+ </office:styles>
+ <office:automatic-styles>
+  <style:style style:name="co1" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="0.878cm"/>
+  </style:style>
+  <style:style style:name="co2" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="4.392cm"/>
+  </style:style>
+  <style:style style:name="co3" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="4.12cm"/>
+  </style:style>
+  <style:style style:name="co4" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="3.621cm"/>
+  </style:style>
+  <style:style style:name="co5" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.314cm"/>
+  </style:style>
+  <style:style style:name="co6" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="3.711cm"/>
+  </style:style>
+  <style:style style:name="co7" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="8.123cm"/>
+  </style:style>
+  <style:style style:name="co8" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="1.697cm"/>
+  </style:style>
+  <style:style style:name="co9" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.514cm"/>
+  </style:style>
+  <style:style style:name="co10" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.649cm"/>
+  </style:style>
+  <style:style style:name="co11" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.568cm"/>
+  </style:style>
+  <style:style style:name="co12" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="2.258cm"/>
+  </style:style>
+  <style:style style:name="co13" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="1.778cm"/>
+  </style:style>
+  <style:style style:name="co14" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="1.152cm"/>
+  </style:style>
+  <style:style style:name="co15" style:family="table-column">
+   <style:table-column-properties fo:break-before="auto" style:column-width="3.059cm"/>
+  </style:style>
+  <style:style style:name="ro1" style:family="table-row">
+   <style:table-row-properties style:row-height="0.452cm" fo:break-before="auto" style:use-optimal-row-height="true"/>
+  </style:style>
+  <style:style style:name="ta1" style:family="table" style:master-page-name="Default">
+   <style:table-properties table:display="true" style:writing-mode="lr-tb"/>
+  </style:style>
+  <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N104">
+   <style:text-properties style:text-position=""/>
+  </style:style>
+  <style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N104"/>
+  <style:page-layout style:name="pm1">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0.25cm"/>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.25cm"/>
+   </style:footer-style>
+  </style:page-layout>
+  <style:page-layout style:name="pm2">
+   <style:page-layout-properties style:writing-mode="lr-tb"/>
+   <style:header-style>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-bottom="0.25cm" fo:border="2.49pt solid #000000" fo:padding="0.018cm" fo:background-color="#c0c0c0">
+     <style:background-image/>
+    </style:header-footer-properties>
+   </style:header-style>
+   <style:footer-style>
+    <style:header-footer-properties fo:min-height="0.75cm" fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0.25cm" fo:border="2.49pt solid #000000" fo:padding="0.018cm" fo:background-color="#c0c0c0">
+     <style:background-image/>
+    </style:header-footer-properties>
+   </style:footer-style>
+  </style:page-layout>
+ </office:automatic-styles>
+ <office:master-styles>
+  <style:master-page style:name="Default" style:page-layout-name="pm1">
+   <style:header>
+    <text:p><text:sheet-name>???</text:sheet-name></text:p>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:footer>
+    <text:p>Page <text:page-number>1</text:page-number></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+  </style:master-page>
+  <style:master-page style:name="Report" style:page-layout-name="pm2">
+   <style:header>
+    <style:region-left>
+     <text:p><text:sheet-name>???</text:sheet-name> (<text:title>???</text:title>)</text:p>
+    </style:region-left>
+    <style:region-right>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2015-10-22">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="17:20:39.294965886">00:00:00</text:time></text:p>
+    </style:region-right>
+   </style:header>
+   <style:header-left style:display="false"/>
+   <style:footer>
+    <text:p>Page <text:page-number>1</text:page-number> / <text:page-count>99</text:page-count></text:p>
+   </style:footer>
+   <style:footer-left style:display="false"/>
+  </style:master-page>
+ </office:master-styles>
+ <office:body>
+  <office:spreadsheet>
+   <table:table table:name="Sheet2" table:style-name="ta1">
+    <table:table-column table:style-name="co1" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co3" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co4" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co5" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co6" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co7" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co8" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co9" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co10" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co11" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co12" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co9" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co13" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co14" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co12" table:number-columns-repeated="3" table:default-cell-style-name="Default"/>
+    <table:table-column table:style-name="co15" table:default-cell-style-name="ce2"/>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="6"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Number of Units:</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+     <table:table-cell table:style-name="ce2" table:formula="of:=SUM([.N5:.N40])" office:value-type="currency" office:currency="GBP" office:value="37.8207933333333" calcext:value-type="currency">
+      <text:p>£37.82</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+     <table:table-cell table:style-name="ce2" table:formula="of:=SUM([.Q4:.Q45])" office:value-type="currency" office:currency="GBP" office:value="290.287288888889" calcext:value-type="currency">
+      <text:p>£290.29</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2"/>
+     <table:table-cell table:formula="of:=SUM([.S4:.S45])" office:value-type="currency" office:currency="GBP" office:value="204.735288888889" calcext:value-type="currency">
+      <text:p>£204.74</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="7"/>
+     <table:table-cell table:style-name="ce2"/>
+     <table:table-cell table:number-columns-repeated="11"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Line Item</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Manufacturer</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MPN</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Octopart URL</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Schematic Reference</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Description</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Item Qty</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Order multiple</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Package</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Package price</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Postage</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Per Item Cost</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Unit Cost</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MOQ</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Remainder</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Order price</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Paid?</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Outstanding Cost</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="18"/>
+     <table:table-cell table:formula="of:=IF([.R4]=&quot;Y&quot;; 0; [.Q4])" office:value-type="currency" office:currency="GBP" office:value="0" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>UWX1C100MCL1GB</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Nichicon</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>UWX1C100MCL1GB</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/uwx1c100mcl1gb-nichicon-203107</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>C1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>10µF electrolytic capacitor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="150" calcext:value-type="float">
+      <text:p>150</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I5]*0.0618*1.2" office:value-type="float" office:value="11.124" calcext:value-type="float">
+      <text:p>11.124</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L5]+[.K5])/[.I5]" office:value-type="currency" office:currency="GBP" office:value="0.07416" calcext:value-type="currency">
+      <text:p>£0.07</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M5]*[.H5]" office:value-type="currency" office:currency="GBP" office:value="0.07416" calcext:value-type="currency">
+      <text:p>£0.07</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H5]/[.I5])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I5]*[.O5])-([.H5]*[.$H$1])" office:value-type="float" office:value="146" calcext:value-type="float">
+      <text:p>146</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O5]*([.L5]+[.K5])" office:value-type="currency" office:currency="GBP" office:value="11.124" calcext:value-type="currency">
+      <text:p>£11.12</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R5]=&quot;Y&quot;; 0; [.Q5])" office:value-type="currency" office:currency="GBP" office:value="11.124" calcext:value-type="currency">
+      <text:p>£11.12</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MC0805B104K500CT</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Multicomp</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MC0805B104K500CT</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/mc0805b104k500ct-multicomp-10529614</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>C2, C5, C6</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>0.1µF 0805 Capacitor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="3" calcext:value-type="float">
+      <text:p>3</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="30" calcext:value-type="float">
+      <text:p>30</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I6]*0.0114*1.2" office:value-type="float" office:value="0.4104" calcext:value-type="float">
+      <text:p>0.4104</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L6]+[.K6])/[.I6]" office:value-type="currency" office:currency="GBP" office:value="0.01368" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M6]*[.H6]" office:value-type="currency" office:currency="GBP" office:value="0.04104" calcext:value-type="currency">
+      <text:p>£0.04</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H6]/[.I6])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I6]*[.O6])-([.H6]*[.$H$1])" office:value-type="float" office:value="18" calcext:value-type="float">
+      <text:p>18</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O6]*([.L6]+[.K6])" office:value-type="currency" office:currency="GBP" office:value="0.4104" calcext:value-type="currency">
+      <text:p>£0.41</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R6]=&quot;Y&quot;; 0; [.Q6])" office:value-type="currency" office:currency="GBP" office:value="0.4104" calcext:value-type="currency">
+      <text:p>£0.41</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MC1206B105K500CT</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Multicomp</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MC1206B105K500CT</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/mc1206b105k500ct-multicomp-10529438</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>C3, C4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>1µF 1206 Capacitor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="25" calcext:value-type="float">
+      <text:p>25</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I7]*0.091*1.2" office:value-type="float" office:value="2.73" calcext:value-type="float">
+      <text:p>2.73</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L7]+[.K7])/[.I7]" office:value-type="currency" office:currency="GBP" office:value="0.1092" calcext:value-type="currency">
+      <text:p>£0.11</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M7]*[.H7]" office:value-type="currency" office:currency="GBP" office:value="0.2184" calcext:value-type="currency">
+      <text:p>£0.22</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H7]/[.I7])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I7]*[.O7])-([.H7]*[.$H$1])" office:value-type="float" office:value="17" calcext:value-type="float">
+      <text:p>17</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O7]*([.L7]+[.K7])" office:value-type="currency" office:currency="GBP" office:value="2.73" calcext:value-type="currency">
+      <text:p>£2.73</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R7]=&quot;Y&quot;; 0; [.Q7])" office:value-type="currency" office:currency="GBP" office:value="2.73" calcext:value-type="currency">
+      <text:p>£2.73</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MC0603N220K500CT</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Multicomp</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MC0603N220K500CT</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/mc0603n220k500ct-multicomp-10530022</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>C7, C8</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>22pF 0603 Capacitor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="150" calcext:value-type="float">
+      <text:p>150</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I8]*1.2*0.0043" office:value-type="float" office:value="0.774" calcext:value-type="float">
+      <text:p>0.774</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L8]+[.K8])/[.I8]" office:value-type="currency" office:currency="GBP" office:value="0.00516" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M8]*[.H8]" office:value-type="currency" office:currency="GBP" office:value="0.01032" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H8]/[.I8])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I8]*[.O8])-([.H8]*[.$H$1])" office:value-type="float" office:value="142" calcext:value-type="float">
+      <text:p>142</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O8]*([.L8]+[.K8])" office:value-type="currency" office:currency="GBP" office:value="0.774" calcext:value-type="currency">
+      <text:p>£0.77</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R8]=&quot;Y&quot;; 0; [.Q8])" office:value-type="currency" office:currency="GBP" office:value="0.774" calcext:value-type="currency">
+      <text:p>£0.77</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SML-LX1206SRW-TR</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Lumex</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SML-LX1206SRW-TR</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/sml-lx1206srw-tr-lumex-550942</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>D1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Red 1206 LED</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="25" calcext:value-type="float">
+      <text:p>25</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I9]*1.2*0.0614" office:value-type="float" office:value="1.842" calcext:value-type="float">
+      <text:p>1.842</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L9]+[.K9])/[.I9]" office:value-type="currency" office:currency="GBP" office:value="0.07368" calcext:value-type="currency">
+      <text:p>£0.07</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M9]*[.H9]" office:value-type="currency" office:currency="GBP" office:value="0.07368" calcext:value-type="currency">
+      <text:p>£0.07</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H9]/[.I9])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I9]*[.O9])-([.H9]*[.$H$1])" office:value-type="float" office:value="21" calcext:value-type="float">
+      <text:p>21</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O9]*([.L9]+[.K9])" office:value-type="currency" office:currency="GBP" office:value="1.842" calcext:value-type="currency">
+      <text:p>£1.84</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R9]=&quot;Y&quot;; 0; [.Q9])" office:value-type="currency" office:currency="GBP" office:value="1.842" calcext:value-type="currency">
+      <text:p>£1.84</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>TC1108-3.3VDBTR</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Microchip</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>TC1108-3.3VDBTR</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/tc1108-3.3vdbtr-microchip-540426</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>I1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>3.3V low dropout, linear regulator</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="15" calcext:value-type="float">
+      <text:p>15</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I10]*1.2*0.388" office:value-type="float" office:value="6.984" calcext:value-type="float">
+      <text:p>6.984</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L10]+[.K10])/[.I10]" office:value-type="currency" office:currency="GBP" office:value="0.4656" calcext:value-type="currency">
+      <text:p>£0.47</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M10]*[.H10]" office:value-type="currency" office:currency="GBP" office:value="0.4656" calcext:value-type="currency">
+      <text:p>£0.47</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H10]/[.I10])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I10]*[.O10])-([.H10]*[.$H$1])" office:value-type="float" office:value="11" calcext:value-type="float">
+      <text:p>11</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O10]*([.L10]+[.K10])" office:value-type="currency" office:currency="GBP" office:value="6.984" calcext:value-type="currency">
+      <text:p>£6.98</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R10]=&quot;Y&quot;; 0; [.Q10])" office:value-type="currency" office:currency="GBP" office:value="6.984" calcext:value-type="currency">
+      <text:p>£6.98</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>ATMEGA328P-PU</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Atmel</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>ATMEGA328P-PU</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/atmega328p-pu-atmel-42866773</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>IC1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Push fit into socket</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="6" calcext:value-type="float">
+      <text:p>6</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I11]*1.2*2.35" office:value-type="float" office:value="16.92" calcext:value-type="float">
+      <text:p>16.92</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L11]+[.K11])/[.I11]" office:value-type="currency" office:currency="GBP" office:value="2.82" calcext:value-type="currency">
+      <text:p>£2.82</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M11]*[.H11]" office:value-type="currency" office:currency="GBP" office:value="2.82" calcext:value-type="currency">
+      <text:p>£2.82</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H11]/[.I11])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I11]*[.O11])-([.H11]*[.$H$1])" office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O11]*([.L11]+[.K11])" office:value-type="currency" office:currency="GBP" office:value="16.92" calcext:value-type="currency">
+      <text:p>£16.92</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R11]=&quot;Y&quot;; 0; [.Q11])" office:value-type="currency" office:currency="GBP" office:value="16.92" calcext:value-type="currency">
+      <text:p>£16.92</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>1-2199298-9</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>TE Connectivity</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>1-2199298-9</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/1-2199298-9-te+connectivity-39188588</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>IC1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DIP-28 Socket (solder to board)</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="10" calcext:value-type="float">
+      <text:p>10</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I12]*1.2*0.422" office:value-type="float" office:value="5.064" calcext:value-type="float">
+      <text:p>5.064</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L12]+[.K12])/[.I12]" office:value-type="currency" office:currency="GBP" office:value="0.5064" calcext:value-type="currency">
+      <text:p>£0.51</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M12]*[.H12]" office:value-type="currency" office:currency="GBP" office:value="0.5064" calcext:value-type="currency">
+      <text:p>£0.51</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H12]/[.I12])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I12]*[.O12])-([.H12]*[.$H$1])" office:value-type="float" office:value="6" calcext:value-type="float">
+      <text:p>6</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O12]*([.L12]+[.K12])" office:value-type="currency" office:currency="GBP" office:value="5.064" calcext:value-type="currency">
+      <text:p>£5.06</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R12]=&quot;Y&quot;; 0; [.Q12])" office:value-type="currency" office:currency="GBP" office:value="5.064" calcext:value-type="currency">
+      <text:p>£5.06</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>RFM69HW-868S2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>RF Solutions</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>RFM69HW-868S2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/rfm69hw-868s2-rf+solutions-52732388</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>IC2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>868MHz High output, packet radio module</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="8" calcext:value-type="float">
+      <text:p>8</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I13]*1.2*6.62" office:value-type="float" office:value="63.552" calcext:value-type="float">
+      <text:p>63.552</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L13]+[.K13])/[.I13]" office:value-type="currency" office:currency="GBP" office:value="7.944" calcext:value-type="currency">
+      <text:p>£7.94</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M13]*[.H13]" office:value-type="currency" office:currency="GBP" office:value="7.944" calcext:value-type="currency">
+      <text:p>£7.94</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H13]/[.I13])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I13]*[.O13])-([.H13]*[.$H$1])" office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O13]*([.L13]+[.K13])" office:value-type="currency" office:currency="GBP" office:value="63.552" calcext:value-type="currency">
+      <text:p>£63.55</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Y</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=IF([.R13]=&quot;Y&quot;; 0; [.Q13])" office:value-type="currency" office:currency="GBP" office:value="0" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>REF-182665-03</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>http://www.toby.co.uk/content/catalogue/products.aspx?series=REF-1826xx-0x</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>J1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>40-pin surface mount, through hole header socket</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="10" calcext:value-type="float">
+      <text:p>10</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I14]*1.2*0.57" office:value-type="float" office:value="6.84" calcext:value-type="float">
+      <text:p>6.84</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L14]+[.K14])/[.I14]" office:value-type="currency" office:currency="GBP" office:value="0.684" calcext:value-type="currency">
+      <text:p>£0.68</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M14]*[.H14]" office:value-type="currency" office:currency="GBP" office:value="0.684" calcext:value-type="currency">
+      <text:p>£0.68</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H14]/[.I14])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I14]*[.O14])-([.H14]*[.$H$1])" office:value-type="float" office:value="6" calcext:value-type="float">
+      <text:p>6</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O14]*([.L14]+[.K14])" office:value-type="currency" office:currency="GBP" office:value="6.84" calcext:value-type="currency">
+      <text:p>£6.84</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Y</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=IF([.R14]=&quot;Y&quot;; 0; [.Q14])" office:value-type="currency" office:currency="GBP" office:value="0" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>M20-9992046</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Harwin</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>M20-9992046</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/m20-9992046-harwin-2627752</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>P1, P3, P4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>1 part split over 3 positions</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="5" calcext:value-type="float">
+      <text:p>5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I15]*1.2*0.328" office:value-type="float" office:value="1.968" calcext:value-type="float">
+      <text:p>1.968</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L15]+[.K15])/[.I15]" office:value-type="currency" office:currency="GBP" office:value="0.3936" calcext:value-type="currency">
+      <text:p>£0.39</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M15]*[.H15]" office:value-type="currency" office:currency="GBP" office:value="0.3936" calcext:value-type="currency">
+      <text:p>£0.39</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H15]/[.I15])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I15]*[.O15])-([.H15]*[.$H$1])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O15]*([.L15]+[.K15])" office:value-type="currency" office:currency="GBP" office:value="1.968" calcext:value-type="currency">
+      <text:p>£1.97</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R15]=&quot;Y&quot;; 0; [.Q15])" office:value-type="currency" office:currency="GBP" office:value="1.968" calcext:value-type="currency">
+      <text:p>£1.97</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>BSS138</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Fairchild Semiconductor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>BSS138</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/bss138-fairchild+semiconductor-13127972</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Q1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>N-channel MOSFET</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="10" calcext:value-type="float">
+      <text:p>10</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I16]*1.2*0.11" office:value-type="float" office:value="1.32" calcext:value-type="float">
+      <text:p>1.32</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L16]+[.K16])/[.I16]" office:value-type="currency" office:currency="GBP" office:value="0.132" calcext:value-type="currency">
+      <text:p>£0.13</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M16]*[.H16]" office:value-type="currency" office:currency="GBP" office:value="0.132" calcext:value-type="currency">
+      <text:p>£0.13</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H16]/[.I16])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I16]*[.O16])-([.H16]*[.$H$1])" office:value-type="float" office:value="6" calcext:value-type="float">
+      <text:p>6</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O16]*([.L16]+[.K16])" office:value-type="currency" office:currency="GBP" office:value="1.32" calcext:value-type="currency">
+      <text:p>£1.32</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R16]=&quot;Y&quot;; 0; [.Q16])" office:value-type="currency" office:currency="GBP" office:value="1.32" calcext:value-type="currency">
+      <text:p>£1.32</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MCWR08X1002FTL</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Multicomp</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MCWR08X1002FTL</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/mcwr08x1002ftl-multicomp-50550529</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>R1, R2, R4, R5</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>10Kohm 0805 resistor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="150" calcext:value-type="float">
+      <text:p>150</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I17]*1.2*0.002" office:value-type="float" office:value="0.36" calcext:value-type="float">
+      <text:p>0.36</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L17]+[.K17])/[.I17]" office:value-type="currency" office:currency="GBP" office:value="0.0024" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M17]*[.H17]" office:value-type="currency" office:currency="GBP" office:value="0.0096" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H17]/[.I17])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I17]*[.O17])-([.H17]*[.$H$1])" office:value-type="float" office:value="134" calcext:value-type="float">
+      <text:p>134</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O17]*([.L17]+[.K17])" office:value-type="currency" office:currency="GBP" office:value="0.36" calcext:value-type="currency">
+      <text:p>£0.36</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R17]=&quot;Y&quot;; 0; [.Q17])" office:value-type="currency" office:currency="GBP" office:value="0.36" calcext:value-type="currency">
+      <text:p>£0.36</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>CRGH0603J75R</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>TE Connectivity</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>CRGH0603J75R</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/crgh0603j75r-te+connectivity-24382109</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>R3</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>75ohm 0603 resistor</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="150" calcext:value-type="float">
+      <text:p>150</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I18]*1.2*0.0036" office:value-type="float" office:value="0.648" calcext:value-type="float">
+      <text:p>0.648</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L18]+[.K18])/[.I18]" office:value-type="currency" office:currency="GBP" office:value="0.00432" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M18]*[.H18]" office:value-type="currency" office:currency="GBP" office:value="0.00432" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H18]/[.I18])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I18]*[.O18])-([.H18]*[.$H$1])" office:value-type="float" office:value="146" calcext:value-type="float">
+      <text:p>146</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O18]*([.L18]+[.K18])" office:value-type="currency" office:currency="GBP" office:value="0.648" calcext:value-type="currency">
+      <text:p>£0.65</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R18]=&quot;Y&quot;; 0; [.Q18])" office:value-type="currency" office:currency="GBP" office:value="0.648" calcext:value-type="currency">
+      <text:p>£0.65</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>KSEK43GLFS</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>C&amp;K Components</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>KSEK43G LFS</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/ksek43g+lfs-c%26k+components-33963906</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SW1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Tactile pushbutton switch</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="25" calcext:value-type="float">
+      <text:p>25</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Cut tape</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I19]*1.2*0.12" office:value-type="float" office:value="3.6" calcext:value-type="float">
+      <text:p>3.6</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L19]+[.K19])/[.I19]" office:value-type="currency" office:currency="GBP" office:value="0.144" calcext:value-type="currency">
+      <text:p>£0.14</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M19]*[.H19]" office:value-type="currency" office:currency="GBP" office:value="0.144" calcext:value-type="currency">
+      <text:p>£0.14</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H19]/[.I19])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I19]*[.O19])-([.H19]*[.$H$1])" office:value-type="float" office:value="21" calcext:value-type="float">
+      <text:p>21</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O19]*([.L19]+[.K19])" office:value-type="currency" office:currency="GBP" office:value="3.6" calcext:value-type="currency">
+      <text:p>£3.60</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R19]=&quot;Y&quot;; 0; [.Q19])" office:value-type="currency" office:currency="GBP" office:value="3.6" calcext:value-type="currency">
+      <text:p>£3.60</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MCRSD16000F183000RR</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Multicomp</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>MCRSD16000F183000RR</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/mcrsd16000f183000rr-multicomp-10528717</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Y1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>16MHz crystal resonator</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="15" calcext:value-type="float">
+      <text:p>15</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I20]*1.2*0.169" office:value-type="float" office:value="3.042" calcext:value-type="float">
+      <text:p>3.042</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L20]+[.K20])/[.I20]" office:value-type="currency" office:currency="GBP" office:value="0.2028" calcext:value-type="currency">
+      <text:p>£0.20</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M20]*[.H20]" office:value-type="currency" office:currency="GBP" office:value="0.2028" calcext:value-type="currency">
+      <text:p>£0.20</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H20]/[.I20])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I20]*[.O20])-([.H20]*[.$H$1])" office:value-type="float" office:value="11" calcext:value-type="float">
+      <text:p>11</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O20]*([.L20]+[.K20])" office:value-type="currency" office:currency="GBP" office:value="3.042" calcext:value-type="currency">
+      <text:p>£3.04</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R20]=&quot;Y&quot;; 0; [.Q20])" office:value-type="currency" office:currency="GBP" office:value="3.042" calcext:value-type="currency">
+      <text:p>£3.04</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="float" office:value="2254056" calcext:value-type="float">
+      <text:p>2254056</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Ettinger</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>07.02.605</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/07.02.605-ettinger-25948966</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>5mm Spacer sleeve</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="50" calcext:value-type="float">
+      <text:p>50</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I21]*1.2*0.104" office:value-type="float" office:value="6.24" calcext:value-type="float">
+      <text:p>6.24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L21]+[.K21])/[.I21]" office:value-type="currency" office:currency="GBP" office:value="0.1248" calcext:value-type="currency">
+      <text:p>£0.12</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M21]*[.H21]" office:value-type="currency" office:currency="GBP" office:value="0.4992" calcext:value-type="currency">
+      <text:p>£0.50</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H21]/[.I21])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I21]*[.O21])-([.H21]*[.$H$1])" office:value-type="float" office:value="34" calcext:value-type="float">
+      <text:p>34</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O21]*([.L21]+[.K21])" office:value-type="currency" office:currency="GBP" office:value="6.24" calcext:value-type="currency">
+      <text:p>£6.24</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R21]=&quot;Y&quot;; 0; [.Q21])" office:value-type="currency" office:currency="GBP" office:value="6.24" calcext:value-type="currency">
+      <text:p>£6.24</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="float" office:value="2494583" calcext:value-type="float">
+      <text:p>2494583</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Ettinger</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>05.12.113</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>https://octopart.com/05.12.113-ettinger-65485457</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>M2.5 11mm Standoff</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="50" calcext:value-type="float">
+      <text:p>50</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=[.I22]*1.2*0.241" office:value-type="float" office:value="14.46" calcext:value-type="float">
+      <text:p>14.46</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L22]+[.K22])/[.I22]" office:value-type="currency" office:currency="GBP" office:value="0.2892" calcext:value-type="currency">
+      <text:p>£0.29</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M22]*[.H22]" office:value-type="currency" office:currency="GBP" office:value="1.1568" calcext:value-type="currency">
+      <text:p>£1.16</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H22]/[.I22])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I22]*[.O22])-([.H22]*[.$H$1])" office:value-type="float" office:value="34" calcext:value-type="float">
+      <text:p>34</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O22]*([.L22]+[.K22])" office:value-type="currency" office:currency="GBP" office:value="14.46" calcext:value-type="currency">
+      <text:p>£14.46</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R22]=&quot;Y&quot;; 0; [.Q22])" office:value-type="currency" office:currency="GBP" office:value="14.46" calcext:value-type="currency">
+      <text:p>£14.46</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>nylon M2.5 12mm</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>M2.5×12 nylon screw</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="50" calcext:value-type="float">
+      <text:p>50</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=(3.57+1.85+3.99)" office:value-type="float" office:value="9.41" calcext:value-type="float">
+      <text:p>9.41</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L23]+[.K23])/[.I23]" office:value-type="currency" office:currency="GBP" office:value="0.1882" calcext:value-type="currency">
+      <text:p>£0.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M23]*[.H23]" office:value-type="currency" office:currency="GBP" office:value="0.7528" calcext:value-type="currency">
+      <text:p>£0.75</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H23]/[.I23])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I23]*[.O23])-([.H23]*[.$H$1])" office:value-type="float" office:value="34" calcext:value-type="float">
+      <text:p>34</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O23]*([.L23]+[.K23])" office:value-type="currency" office:currency="GBP" office:value="9.41" calcext:value-type="currency">
+      <text:p>£9.41</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Y</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=IF([.R23]=&quot;Y&quot;; 0; [.Q23])" office:value-type="currency" office:currency="GBP" office:value="0" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>nylon nut M2.5</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>M2.5 Nylon nut</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="50" calcext:value-type="float">
+      <text:p>50</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="3.95" calcext:value-type="float">
+      <text:p>3.95</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L24]+[.K24])/[.I24]" office:value-type="currency" office:currency="GBP" office:value="0.079" calcext:value-type="currency">
+      <text:p>£0.08</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M24]*[.H24]" office:value-type="currency" office:currency="GBP" office:value="0.079" calcext:value-type="currency">
+      <text:p>£0.08</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H24]/[.I24])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I24]*[.O24])-([.H24]*[.$H$1])" office:value-type="float" office:value="46" calcext:value-type="float">
+      <text:p>46</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O24]*([.L24]+[.K24])" office:value-type="currency" office:currency="GBP" office:value="3.95" calcext:value-type="currency">
+      <text:p>£3.95</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Y</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=IF([.R24]=&quot;Y&quot;; 0; [.Q24])" office:value-type="currency" office:currency="GBP" office:value="0" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>nylon washer M2.5</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>M2.5 Nylon Washer</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="50" calcext:value-type="float">
+      <text:p>50</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Loose</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="1.8" calcext:value-type="float">
+      <text:p>1.8</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L25]+[.K25])/[.I25]" office:value-type="currency" office:currency="GBP" office:value="0.036" calcext:value-type="currency">
+      <text:p>£0.04</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M25]*[.H25]" office:value-type="currency" office:currency="GBP" office:value="0.036" calcext:value-type="currency">
+      <text:p>£0.04</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H25]/[.I25])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I25]*[.O25])-([.H25]*[.$H$1])" office:value-type="float" office:value="46" calcext:value-type="float">
+      <text:p>46</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O25]*([.L25]+[.K25])" office:value-type="currency" office:currency="GBP" office:value="1.8" calcext:value-type="currency">
+      <text:p>£1.80</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Y</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=IF([.R25]=&quot;Y&quot;; 0; [.Q25])" office:value-type="currency" office:currency="GBP" office:value="0" calcext:value-type="currency">
+      <text:p>£0.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Brown Base</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L26]+[.K26])/[.I26]" office:value-type="currency" office:currency="GBP" office:value="1.29561111111111" calcext:value-type="currency">
+      <text:p>£1.30</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M26]*[.H26]" office:value-type="currency" office:currency="GBP" office:value="1.29561111111111" calcext:value-type="currency">
+      <text:p>£1.30</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H26]/[.I26])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I26]*[.O26])-([.H26]*[.$H$1])" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O26]*([.L26]+[.K26])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R26]=&quot;Y&quot;; 0; [.Q26])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Left/right side</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L27]+[.K27])/[.I27]" office:value-type="currency" office:currency="GBP" office:value="1.29561111111111" calcext:value-type="currency">
+      <text:p>£1.30</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M27]*[.H27]" office:value-type="currency" office:currency="GBP" office:value="2.59122222222222" calcext:value-type="currency">
+      <text:p>£2.59</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H27]/[.I27])" office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I27]*[.O27])-([.H27]*[.$H$1])" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O27]*([.L27]+[.K27])" office:value-type="currency" office:currency="GBP" office:value="10.3648888888889" calcext:value-type="currency">
+      <text:p>£10.36</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R27]=&quot;Y&quot;; 0; [.Q27])" office:value-type="currency" office:currency="GBP" office:value="10.3648888888889" calcext:value-type="currency">
+      <text:p>£10.36</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Front/back side</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L28]+[.K28])/[.I28]" office:value-type="currency" office:currency="GBP" office:value="1.29561111111111" calcext:value-type="currency">
+      <text:p>£1.30</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M28]*[.H28]" office:value-type="currency" office:currency="GBP" office:value="2.59122222222222" calcext:value-type="currency">
+      <text:p>£2.59</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H28]/[.I28])" office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I28]*[.O28])-([.H28]*[.$H$1])" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O28]*([.L28]+[.K28])" office:value-type="currency" office:currency="GBP" office:value="10.3648888888889" calcext:value-type="currency">
+      <text:p>£10.36</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R28]=&quot;Y&quot;; 0; [.Q28])" office:value-type="currency" office:currency="GBP" office:value="10.3648888888889" calcext:value-type="currency">
+      <text:p>£10.36</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Green top</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L29]+[.K29])/[.I29]" office:value-type="currency" office:currency="GBP" office:value="1.29561111111111" calcext:value-type="currency">
+      <text:p>£1.30</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M29]*[.H29]" office:value-type="currency" office:currency="GBP" office:value="1.29561111111111" calcext:value-type="currency">
+      <text:p>£1.30</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H29]/[.I29])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I29]*[.O29])-([.H29]*[.$H$1])" office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O29]*([.L29]+[.K29])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R29]=&quot;Y&quot;; 0; [.Q29])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Dk green squares</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="12" calcext:value-type="float">
+      <text:p>12</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="400" calcext:value-type="float">
+      <text:p>400</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L30]+[.K30])/[.I30]" office:value-type="currency" office:currency="GBP" office:value="0.0129561111111111" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M30]*[.H30]" office:value-type="currency" office:currency="GBP" office:value="0.155473333333333" calcext:value-type="currency">
+      <text:p>£0.16</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H30]/[.I30])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I30]*[.O30])-([.H30]*[.$H$1])" office:value-type="float" office:value="352" calcext:value-type="float">
+      <text:p>352</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O30]*([.L30]+[.K30])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R30]=&quot;Y&quot;; 0; [.Q30])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Lt green squares</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="12" calcext:value-type="float">
+      <text:p>12</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="400" calcext:value-type="float">
+      <text:p>400</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L31]+[.K31])/[.I31]" office:value-type="currency" office:currency="GBP" office:value="0.0129561111111111" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M31]*[.H31]" office:value-type="currency" office:currency="GBP" office:value="0.155473333333333" calcext:value-type="currency">
+      <text:p>£0.16</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H31]/[.I31])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I31]*[.O31])-([.H31]*[.$H$1])" office:value-type="float" office:value="352" calcext:value-type="float">
+      <text:p>352</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O31]*([.L31]+[.K31])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R31]=&quot;Y&quot;; 0; [.Q31])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Lt brown squares</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell table:formula="of:=12*4" office:value-type="float" office:value="48" calcext:value-type="float">
+      <text:p>48</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="400" calcext:value-type="float">
+      <text:p>400</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L32]+[.K32])/[.I32]" office:value-type="currency" office:currency="GBP" office:value="0.0129561111111111" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M32]*[.H32]" office:value-type="currency" office:currency="GBP" office:value="0.621893333333333" calcext:value-type="currency">
+      <text:p>£0.62</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H32]/[.I32])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I32]*[.O32])-([.H32]*[.$H$1])" office:value-type="float" office:value="208" calcext:value-type="float">
+      <text:p>208</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O32]*([.L32]+[.K32])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R32]=&quot;Y&quot;; 0; [.Q32])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Brown squares</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="20" calcext:value-type="float">
+      <text:p>20</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="400" calcext:value-type="float">
+      <text:p>400</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>300×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=3.49*1.2" office:value-type="currency" office:currency="GBP" office:value="4.188" calcext:value-type="currency">
+      <text:p>£4.19</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L33]+[.K33])/[.I33]" office:value-type="currency" office:currency="GBP" office:value="0.0129561111111111" calcext:value-type="currency">
+      <text:p>£0.01</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M33]*[.H33]" office:value-type="currency" office:currency="GBP" office:value="0.259122222222222" calcext:value-type="currency">
+      <text:p>£0.26</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H33]/[.I33])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I33]*[.O33])-([.H33]*[.$H$1])" office:value-type="float" office:value="320" calcext:value-type="float">
+      <text:p>320</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O33]*([.L33]+[.K33])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R33]=&quot;Y&quot;; 0; [.Q33])" office:value-type="currency" office:currency="GBP" office:value="5.18244444444444" calcext:value-type="currency">
+      <text:p>£5.18</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Grey squares</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>DefProc</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="8" calcext:value-type="float">
+      <text:p>8</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="200" calcext:value-type="float">
+      <text:p>200</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>150×300 sheet</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=2*1.2" office:value-type="currency" office:currency="GBP" office:value="2.4" calcext:value-type="currency">
+      <text:p>£2.40</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=8.95/9" office:value-type="currency" office:currency="GBP" office:value="0.994444444444444" calcext:value-type="currency">
+      <text:p>£0.99</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L34]+[.K34])/[.I34]" office:value-type="currency" office:currency="GBP" office:value="0.0169722222222222" calcext:value-type="currency">
+      <text:p>£0.02</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M34]*[.H34]" office:value-type="currency" office:currency="GBP" office:value="0.135777777777778" calcext:value-type="currency">
+      <text:p>£0.14</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H34]/[.I34])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I34]*[.O34])-([.H34]*[.$H$1])" office:value-type="float" office:value="168" calcext:value-type="float">
+      <text:p>168</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O34]*([.L34]+[.K34])" office:value-type="currency" office:currency="GBP" office:value="3.39444444444444" calcext:value-type="currency">
+      <text:p>£3.39</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R34]=&quot;Y&quot;; 0; [.Q34])" office:value-type="currency" office:currency="GBP" office:value="3.39444444444444" calcext:value-type="currency">
+      <text:p>£3.39</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Circuit board</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Ragworm</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+     <table:table-cell office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="6" calcext:value-type="float">
+      <text:p>6</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="float" office:value="58.03" calcext:value-type="float">
+      <text:p>58.03</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L35]+[.K35])/[.I35]" office:value-type="currency" office:currency="GBP" office:value="9.67166666666667" calcext:value-type="currency">
+      <text:p>£9.67</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M35]*[.H35]" office:value-type="currency" office:currency="GBP" office:value="9.67166666666667" calcext:value-type="currency">
+      <text:p>£9.67</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H35]/[.I35])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I35]*[.O35])-([.H35]*[.$H$1])" office:value-type="float" office:value="2" calcext:value-type="float">
+      <text:p>2</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O35]*([.L35]+[.K35])" office:value-type="currency" office:currency="GBP" office:value="58.03" calcext:value-type="currency">
+      <text:p>£58.03</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell table:formula="of:=IF([.R35]=&quot;Y&quot;; 0; [.Q35])" office:value-type="currency" office:currency="GBP" office:value="58.03" calcext:value-type="currency">
+      <text:p>£58.03</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell/>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Light up Arcade button</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Arcade World UK</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>AWUK</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>http://www.arcadeworlduk.com/products/square-44mm-low-profile-illuminated-arcade-button.html</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>SW1/D1</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>Square 44mm Low profile Illuminated arcade button</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0.8" calcext:value-type="float">
+      <text:p>0.8</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="4" calcext:value-type="float">
+      <text:p>4</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="float" office:value="14" calcext:value-type="float">
+      <text:p>14</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="0" calcext:value-type="float">
+      <text:p>0</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=([.L36]+[.K36])/[.I36]" office:value-type="currency" office:currency="GBP" office:value="3.5" calcext:value-type="currency">
+      <text:p>£3.50</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.M36]*[.H36]" office:value-type="currency" office:currency="GBP" office:value="2.8" calcext:value-type="currency">
+      <text:p>£2.80</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=ROUNDUP([.$H$1]*[.H36]/[.I36])" office:value-type="float" office:value="1" calcext:value-type="float">
+      <text:p>1</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=([.I36]*[.O36])-([.H36]*[.$H$1])" office:value-type="float" office:value="0.8" calcext:value-type="float">
+      <text:p>0.8</text:p>
+     </table:table-cell>
+     <table:table-cell table:style-name="ce2" table:formula="of:=[.O36]*([.L36]+[.K36])" office:value-type="currency" office:currency="GBP" office:value="14" calcext:value-type="currency">
+      <text:p>£14.00</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="string" calcext:value-type="string">
+      <text:p>y</text:p>
+     </table:table-cell>
+     <table:table-cell table:formula="of:=IF([.R36]=&quot;Y&quot;; 0; [.Q36])" office:value-type="currency" office:currency="GBP" office:value="14" calcext:value-type="currency">
+      <text:p>£14.00</text:p>
+     </table:table-cell>
+    </table:table-row>
+    <table:table-row table:style-name="ro1" table:number-rows-repeated="1048539">
+     <table:table-cell table:number-columns-repeated="19"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell table:number-columns-repeated="19"/>
+    </table:table-row>
+   </table:table>
+   <table:named-expressions/>
+  </office:spreadsheet>
+ </office:body>
+</office:document>
