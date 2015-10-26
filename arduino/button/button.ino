@@ -7,7 +7,7 @@
 
 #define NETWORKID         87
 #define NODEID              1 // 1-100 for nodes
-#define GATEWAYID           254 
+#define GATEWAYID           254
 #define FREQUENCY RF69_868MHZ
 #define IS_RFM69HW
 #define REQUESTACK       true // whether to request ACKs for sent messages
@@ -16,7 +16,7 @@
 #define WAIT_FOR_REPLY 10000UL // how long should we wait for a reply before going back to sleep?
 
 #define LED                 9
-#define BUTTON           INT1 // choose an interrupt pin 
+#define BUTTON           INT1 // choose an interrupt pin
 
 #define DBOUNCE_TMOUT   500UL
 #define LED_TIMEOUT   12000UL
@@ -30,7 +30,7 @@
 
 #define ENCRYPTKEY "changemechangeme"
 
-typedef struct { 
+typedef struct {
   uint8_t action;
   uint8_t node;
 } Payload;
@@ -45,9 +45,9 @@ unsigned long lastAction = 0;
 volatile boolean button = false;
 volatile boolean radioCalled = true;
 
-void setup() 
+void setup()
 {
-  // set up ports for minimal leakage current 
+  // set up ports for minimal leakage current
   DDRD &= B00000011;       // set Arduino pins 2 to 7 as inputs, leaves 0 & 1 (RX & TX) as is
   DDRB = B00000000;        // set pins 8 to 13 as inputs
   PORTD |= B11111100;      // enable pullups on pins 2 to 7
@@ -69,16 +69,16 @@ void setup()
 
   myPacket.node = NODEID;
   myPacket.action = 0;
-  
+
   attachInterrupt(BUTTON, buttonCheck, FALLING);
 #if SERIAL_PRINT == 1
   Serial.println("Ready...");
 #endif
 }
 
-void loop() 
+void loop()
 {
-  //on button press, 
+  //on button press,
   if (radioCalled == false) {
     lastAction = millis();
     //make a radio call
@@ -166,8 +166,8 @@ void loop()
     Serial.println();
 #endif
   lastAction = millis();
-  } 
-  
+  }
+
   if (millis() - lastAction >= SLEEP_TIMEOUT) {
 #if SERIAL_PRINT == 1
     Serial.print("Sleeping...zzz...");
@@ -184,7 +184,7 @@ void loop()
   }
 }
 
-static bool waitForAck() 
+static bool waitForAck()
 {
   unsigned long now = millis();
   while (millis() - now <= ACK_TIME)
@@ -212,4 +212,3 @@ void pulseLed(unsigned long time)
       analogWrite(LED, val);
   }
 }
-

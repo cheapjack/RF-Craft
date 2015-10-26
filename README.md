@@ -6,12 +6,12 @@ RFM69 radio buttons that report to a central reciever to perform minecraft actio
 Message Format
 --------------
 
-messages are constructed of `int8_t` for action followed by a `uint8_t` for node_id. 
+messages are constructed of `int8_t` for action followed by a `uint8_t` for node_id.
 
 Possible messages:
 
- * -1 : query_id
- *  0 : set_id
+ * -1 : set_id
+ *  0 : query_id
  *  1 : button press
  *  2 : error
  *  3 : OK
