@@ -18,6 +18,10 @@ byte this_node_id = NODEID;
 #define BUTTON_PRESS 1
 #define ERROR 2
 #define OK 3
+#define ACK 4
+#define NAK 5
+#define NAN 6
+#define NO_DATA 7
 
 #define ENCRYPTKEY "changemechangeme"
 
@@ -86,16 +90,16 @@ void loop()
         myPacket.node = node;
         radio.send(myPacket.node, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
         if (waitForAck()) {
-          Serial.println(F("message recieved"));
+          Serial.println(F("ACK"));
         } else {
-          Serial.println(F("message lost to the ether"));
+          Serial.println(F("NAK"));
         }
       } else {
-        Serial.print(F("unknown node: "));
+        Serial.print(F("NAN"));
         Serial.println(node);
       }
     } else {
-      Serial.print(F("unknown: "));
+      Serial.print(F("ERROR: "));
       Serial.println(code);
     }
     Serial.find("\n");
