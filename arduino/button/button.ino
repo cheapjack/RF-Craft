@@ -22,11 +22,18 @@
 #define LED_TIMEOUT   12000UL
 #define SLEEP_TIMEOUT  1000UL
 
-#define QUERY_ID -1
-#define SET_ID 0
+#define DOT 200UL
+#define DASH DOT*3
+
+#define QUERY_ID 0
+#define SET_ID -1
 #define BUTTON_PRESS 1
 #define ERROR 2
 #define OK 3
+#define ACK 4
+#define NAK 5
+#define NAN 6
+#define NO_DATA 7
 
 #define ENCRYPTKEY "changemechangeme"
 
@@ -92,6 +99,7 @@ void loop()
 #endif
     radio.send(GATEWAYID, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
     radioCalled = true;
+    boolean listen_for_reply = LISTEN_FOR_REPLY;
     if (REQUESTACK) {
 #if SERIAL_PRINT == 1
       Serial.print(" - waiting for ACK...");
@@ -101,32 +109,32 @@ void loop()
         Serial.print("ok!");
 #endif
         // pulse the onboard led
+        morseLed(ACK);
         lastAction = millis();
         //pulseLed(LED_TIMEOUT);
         digitalWrite(LED, LOW);
         //button = false;
-      }
-      else {
+      } else {
 #if SERIAL_PRINT == 1
         Serial.print("no reply...");
 #endif
         button = false;
-        digitalWrite(LED, HIGH);
         lastAction = millis();
-        delay(100);
-        digitalWrite(LED, LOW);
+        morseLed(NAK);
+        listen_for_reply = false;
       }
-      if (LISTEN_FOR_REPLY == true) {
+      if (listen_for_reply == true) {
         unsigned long reply_time = millis();
         boolean replied = false;
         while (millis() - reply_time <= WAIT_FOR_REPLY) {
-          digitalWrite(LED, HIGH);
+          //digitalWrite(LED, HIGH);
           if (radio.receiveDone()) {
-            digitalWrite(LED, LOW);
+            //digitalWrite(LED, LOW);
             if (radio.DATALEN != sizeof(yourPacket)) {
 #if SERIAL_PRINT == 1
               Serial.print("Invalid payload recieved");
 #endif
+              morseLed(NAN);
             } else {
               replied = true;
               yourPacket = *(Payload*)radio.DATA;
@@ -147,14 +155,22 @@ void loop()
             break;
           }
         }
-        if (replied == true && yourPacket.action == OK) {
-          Serial.print("received OK");
-          pulseLed(LED_TIMEOUT);
+        if (replied == true) {
+          if (yourPacket.action == OK) {
+            Serial.print("received OK");
+            morseLed(OK);
+            gap();
+            pulseLed(LED_TIMEOUT);
+          } else {
+            Serial.print("received: ");
+            Serial.print(yourPacket.action);
+            morseLed(yourPacket.action);
+          }
         } else {
 #if SERIAL_PRINT == 1
           Serial.print("no message: ");
-          Serial.print(yourPacket.action);
 #endif
+          morseLed(NO_DATA);
         }
         digitalWrite(LED, LOW);
       }
@@ -211,4 +227,93 @@ void pulseLed(unsigned long time)
       float val = (exp(sin((millis()-startTime)/1000.0*PI)) - 0.36787944)*108.0;
       analogWrite(LED, val);
   }
+}
+
+void morseLed(byte k_message)
+{
+  if (k_message == ERROR) {
+    // E
+    dot();
+    gap();
+    // R
+    dot(); dash(); dot();
+    gap();
+    // R
+    dot(); dash(); dot();
+  } else if (k_message == OK) {
+    // O
+    dash(); dash(); dash();
+    gap();
+    // K
+    dash(); dash(); dash();
+  } else if (k_message == ACK) {
+    // A
+    dot(); dash();
+    gap();
+    // C
+    dash(); dot(); dash(); dot();
+    gap();
+    // K
+    dash(); dot(); dash();
+  } else if (k_message == NAK) {
+    // N
+    dash(); dot();
+    gap();
+    // A
+    dot(); dash();
+    gap();
+    // K
+    dash(); dot(); dash();
+  } else if (k_message == NAN) {
+    // N
+    dash(); dot();
+    // A
+    dot(); dash();
+    // N
+    dash(); dot();
+  } else if (k_message == NO_DATA) {
+    // N
+    dash(); dot();
+    // O
+    dash(); dash(); dash();
+    // D
+    dash(); dot(); dot();
+    // A
+    dot(); dash();
+    // T
+    dash();
+    // A
+    dot(); dash();
+  } else {
+    // ?
+    dot(); dot(); dash(); dash(); dot(); dot();
+  }
+}
+
+void dot()
+{
+  digitalWrite(LED, HIGH);
+  delay(DOT);
+  digitalWrite(LED, LOW);
+  delay(DOT);
+}
+
+void dash()
+{
+  digitalWrite(LED, HIGH);
+  delay(DASH);
+  digitalWrite(LED, LOW);
+  delay(DOT);
+}
+
+void gap()
+{
+  // space is normally 3*DOT, but each dot/dash ends in
+  // a single dot length delay.
+  delay(DOT*2);
+}
+
+void space()
+{
+  delay(DOT*6);
 }
