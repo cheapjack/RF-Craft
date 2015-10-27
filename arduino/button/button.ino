@@ -1,39 +1,43 @@
 #include <RFM69.h>
+#include <EEPROM.h>
 #include <avr/power.h>
 #include <avr/sleep.h>
 
-#define SERIAL_PRINT        1 //choose serial reporting on (1) or off (0)
-#define SERIAL_BAUD    9600
+#define SERIAL_PRINT         1 //choose serial reporting on (1) or off (0)
+#define SERIAL_BAUD       9600
 
-#define NETWORKID         87
-#define NODEID              1 // 1-100 for nodes
-#define GATEWAYID           254
-#define FREQUENCY RF69_868MHZ
+#define NETWORKID           87
+#define NODEID               1 // 1-100 for nodes
+#define NODEID_LOCATION     78
+#define GATEWAYID          254
+#define FREQUENCY  RF69_868MHZ
 #define IS_RFM69HW
-#define REQUESTACK       true // whether to request ACKs for sent messages
-#define ACK_TIME           50 // # of ms to wait for an ack
-#define LISTEN_FOR_REPLY true // choose if we want to listen and parse a reply
+#define REQUESTACK        true // whether to request ACKs for sent messages
+#define ACK_TIME            50 // # of ms to wait for an ack
+#define LISTEN_FOR_REPLY  true // choose if we want to listen and parse a reply
 #define WAIT_FOR_REPLY 10000UL // how long should we wait for a reply before going back to sleep?
 
-#define LED                 9
-#define BUTTON           INT1 // choose an interrupt pin
+byte this_node_id = NODEID;
 
-#define DBOUNCE_TMOUT   500UL
-#define LED_TIMEOUT   12000UL
-#define SLEEP_TIMEOUT  1000UL
+#define LED                  9
+#define BUTTON            INT1 // choose an interrupt pin
 
-#define DOT 200UL
-#define DASH DOT*3
+#define DBOUNCE_TMOUT    500UL
+#define LED_TIMEOUT    12000UL
+#define SLEEP_TIMEOUT   1000UL
 
-#define QUERY_ID 0
-#define SET_ID -1
-#define BUTTON_PRESS 1
-#define ERROR 2
-#define OK 3
-#define ACK 4
-#define NAK 5
-#define NAN 6
-#define NO_DATA 7
+#define DOT              200UL
+#define DASH             600UL // DOT*3
+
+#define QUERY_ID             0
+#define SET_ID              -1
+#define BUTTON_PRESS         1
+#define ERROR                2
+#define OK                   3
+#define ACK                  4
+#define NAK                  5
+#define NON                  6
+#define NO_DATA              7
 
 #define ENCRYPTKEY "changemechangeme"
 
@@ -51,6 +55,24 @@ unsigned long lastButton = 0;
 unsigned long lastAction = 0;
 volatile boolean button = false;
 volatile boolean radioCalled = true;
+
+byte isButton(byte k_node_id = this_node_id)
+{
+  if (k_node_id >= 1 && k_node_id <= 100) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+byte isGateway(byte k_node_id = this_node_id)
+{
+  if (k_node_id == 254) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 void setup()
 {
@@ -74,7 +96,14 @@ void setup()
   radio.encrypt(ENCRYPTKEY);
   radio.sleep(); //sleep right away to save power
 
-  myPacket.node = NODEID;
+  byte node;
+  EEPROM.get(NODEID_LOCATION, node);
+  if (isButton(node) || isGateway(node)) {
+    this_node_id = node;
+  } else {
+    this_node_id = NODEID;
+  }
+  myPacket.node = this_node_id;
   myPacket.action = 0;
 
   attachInterrupt(BUTTON, buttonCheck, FALLING);
@@ -85,119 +114,178 @@ void setup()
 
 void loop()
 {
-  //on button press,
-  if (radioCalled == false) {
-    lastAction = millis();
-    //make a radio call
-    myPacket.action = BUTTON_PRESS;
-    detachInterrupt(BUTTON);
-#if SERIAL_PRINT == 1
-    Serial.print("Calling... ");
-    Serial.print(myPacket.node);
-    Serial.print(":");
-    Serial.print(myPacket.action);
-#endif
-    radio.send(GATEWAYID, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
-    radioCalled = true;
-    boolean listen_for_reply = LISTEN_FOR_REPLY;
-    if (REQUESTACK) {
-#if SERIAL_PRINT == 1
-      Serial.print(" - waiting for ACK...");
-#endif
-      if (waitForAck()) {
-#if SERIAL_PRINT == 1
-        Serial.print("ok!");
-#endif
-        // pulse the onboard led
-        morseLed(ACK);
-        lastAction = millis();
-        //pulseLed(LED_TIMEOUT);
-        digitalWrite(LED, LOW);
-        //button = false;
+  while (Serial.available() > 0) {
+    char character = Serial.peek();
+    int code = Serial.parseInt();
+
+    if (character == 'h') {
+      Serial.println(F("Accepted input"));
+      Serial.println(F("(action),(node_id)"));
+      Serial.println(F("where action can be: "));
+      Serial.println(F("-1, set_id"));
+      Serial.println(F(" 0, query_id"));
+      Serial.println(F(" 1, button press"));
+      Serial.println(F(" 2, error"));
+      Serial.println(F(" 3, OK"));
+      Serial.println(F("and node_id can be: "));
+      Serial.println(F(" 1-100 for buttons"));
+      Serial.println(F(" 254 for the gateway"));
+    } else if (code == QUERY_ID) {
+      Serial.print(F("NODEID: "));
+      Serial.println(this_node_id);
+    } else if (code == SET_ID) {
+      int node = Serial.parseInt();
+      if (isButton(node) || isGateway(node)) {
+        this_node_id = node;
+        EEPROM.put(NODEID_LOCATION, this_node_id);
+        radio.initialize(FREQUENCY, this_node_id, NETWORKID);
+      }
+      Serial.print(F("NODEID: "));
+      Serial.println(this_node_id);
+    } else if (code == BUTTON_PRESS) {
+      if (isGateway()) {
+        Serial.println(F("NOT_A_BUTTON"));
       } else {
-#if SERIAL_PRINT == 1
-        Serial.print("no reply...");
-#endif
-        button = false;
-        lastAction = millis();
-        morseLed(NAK);
-        listen_for_reply = false;
+        button = true;
       }
-      if (listen_for_reply == true) {
-        unsigned long reply_time = millis();
-        boolean replied = false;
-        while (millis() - reply_time <= WAIT_FOR_REPLY) {
-          //digitalWrite(LED, HIGH);
-          if (radio.receiveDone()) {
-            //digitalWrite(LED, LOW);
-            if (radio.DATALEN != sizeof(yourPacket)) {
-#if SERIAL_PRINT == 1
-              Serial.print("Invalid payload recieved");
-#endif
-              morseLed(NAN);
-            } else {
-              replied = true;
-              yourPacket = *(Payload*)radio.DATA;
-#if SERIAL_PRINT == 1
-              Serial.print("Recieved: ");
-              Serial.print(yourPacket.node);
-              Serial.print(":");
-              Serial.print(yourPacket.action);
-              Serial.println();
-#endif
-            }
-            if (radio.ACKRequested()) {
-              radio.sendACK();
-#if SERIAL_PRINT == 1
-              Serial.println("ACK sent");
-#endif
-            }
-            break;
-          }
-        }
-        if (replied == true) {
-          if (yourPacket.action == OK) {
-            Serial.print("received OK");
-            morseLed(OK);
-            gap();
-            pulseLed(LED_TIMEOUT);
-          } else {
-            Serial.print("received: ");
-            Serial.print(yourPacket.action);
-            morseLed(yourPacket.action);
-          }
+    } else if (code == ERROR || code == OK) {
+      int node = Serial.parseInt();
+      if (isButton(node)) {
+        myPacket.action = code;
+        myPacket.node = node;
+        radio.send(myPacket.node, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
+        if (waitForAck()) {
+          Serial.println(F("ACK"));
         } else {
-#if SERIAL_PRINT == 1
-          Serial.print("no message: ");
-#endif
-          morseLed(NO_DATA);
+          Serial.println(F("NAK"));
         }
-        digitalWrite(LED, LOW);
+      } else {
+        Serial.print(F("NON"));
+        Serial.println(node);
       }
+    } else {
+      Serial.print(F("ERROR: "));
+      Serial.println(code);
     }
-    button = false;
-    radio.sleep();
-    attachInterrupt(BUTTON, buttonCheck, FALLING);
-#if SERIAL_PRINT == 1
-    Serial.println();
-#endif
-  lastAction = millis();
+    Serial.find("\n");
   }
 
-  if (millis() - lastAction >= SLEEP_TIMEOUT) {
+  if (isButton()) {
+    //on button press,
+    if (radioCalled == false) {
+      lastAction = millis();
+      //make a radio call
+      myPacket.action = BUTTON_PRESS;
+      detachInterrupt(BUTTON);
 #if SERIAL_PRINT == 1
-    Serial.print("Sleeping...zzz...");
-    delay(100);
+      Serial.print("Calling... ");
+      Serial.print(myPacket.node);
+      Serial.print(":");
+      Serial.print(myPacket.action);
 #endif
-    set_sleep_mode(SLEEP_MODE_STANDBY);
-    sleep_enable();
-    sleep_mode();
-    sleep_disable();
+      radio.send(GATEWAYID, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
+      radioCalled = true;
+      boolean listen_for_reply = LISTEN_FOR_REPLY;
+      if (REQUESTACK) {
 #if SERIAL_PRINT == 1
-    Serial.println(" Awake!");
+        Serial.print(" - waiting for ACK...");
+#endif
+        if (waitForAck()) {
+#if SERIAL_PRINT == 1
+          Serial.print("ok!");
+#endif
+          // pulse the onboard led
+          morseLed(ACK);
+          lastAction = millis();
+          //pulseLed(LED_TIMEOUT);
+          digitalWrite(LED, LOW);
+          //button = false;
+        } else {
+#if SERIAL_PRINT == 1
+          Serial.print("no reply...");
+#endif
+          button = false;
+          lastAction = millis();
+          morseLed(NAK);
+          listen_for_reply = false;
+        }
+        if (listen_for_reply == true) {
+          unsigned long reply_time = millis();
+          boolean replied = false;
+          while (millis() - reply_time <= WAIT_FOR_REPLY) {
+            //digitalWrite(LED, HIGH);
+            if (radio.receiveDone()) {
+              //digitalWrite(LED, LOW);
+              if (radio.DATALEN != sizeof(yourPacket)) {
+#if SERIAL_PRINT == 1
+                Serial.print("Invalid payload recieved");
+#endif
+                morseLed(NON);
+              } else {
+                replied = true;
+                yourPacket = *(Payload*)radio.DATA;
+#if SERIAL_PRINT == 1
+                Serial.print("Recieved: ");
+                Serial.print(yourPacket.node);
+                Serial.print(":");
+                Serial.print(yourPacket.action);
+                Serial.println();
+#endif
+              }
+              if (radio.ACKRequested()) {
+                radio.sendACK();
+#if SERIAL_PRINT == 1
+                Serial.println("ACK sent");
+#endif
+              }
+              break;
+            }
+          }
+          if (replied == true) {
+            if (yourPacket.action == OK) {
+              Serial.print("received OK");
+              morseLed(OK);
+              gap();
+              pulseLed(LED_TIMEOUT);
+            } else {
+              Serial.print("received: ");
+              Serial.print(yourPacket.action);
+              morseLed(yourPacket.action);
+            }
+          } else {
+#if SERIAL_PRINT == 1
+            Serial.print("no message: ");
+#endif
+            morseLed(NO_DATA);
+          }
+          digitalWrite(LED, LOW);
+        }
+      }
+      button = false;
+      radio.sleep();
+      attachInterrupt(BUTTON, buttonCheck, FALLING);
+#if SERIAL_PRINT == 1
+      Serial.println();
 #endif
     lastAction = millis();
-  }
+    }
+
+    // reduce battery consumption with sleep mode
+    //if (millis() - lastAction >= SLEEP_TIMEOUT) {
+//#if SERIAL_PRINT == 1
+      //Serial.print("Sleeping...zzz...");
+      //delay(100);
+//#endif
+      //set_sleep_mode(SLEEP_MODE_STANDBY);
+      //sleep_enable();
+      //sleep_mode();
+      //sleep_disable();
+//#if SERIAL_PRINT == 1
+      //Serial.println(" Awake!");
+//#endif
+      //lastAction = millis();
+    //}
+  }// end of isButton
 }
 
 static bool waitForAck()
@@ -264,7 +352,7 @@ void morseLed(byte k_message)
     gap();
     // K
     dash(); dot(); dash();
-  } else if (k_message == NAN) {
+  } else if (k_message == NON) {
     // N
     dash(); dot();
     // A
