@@ -24,3 +24,6 @@ board/gerbers/*.zip
 # platformio ignores
 .pioenvs
 .sconsign.dblite
+
+# don't need case/*.eps files
+case/*.eps
