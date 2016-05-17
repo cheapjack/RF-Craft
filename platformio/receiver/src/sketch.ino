@@ -1,4 +1,3 @@
-#include <SPI.h>
 #include <RFM69.h>
 
 #define SERIAL_BAUD    9600
