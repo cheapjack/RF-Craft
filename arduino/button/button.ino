@@ -167,7 +167,7 @@ void loop()
       Serial.print(F("ERROR: "));
       Serial.println(code);
     }
-    Serial.find("\n");
+    Serial.find('\n');
   }
 
   if (isButton()) {

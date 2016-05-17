@@ -114,7 +114,7 @@ void loop()
       Serial.println(code);
       morseLed(NO_DATA);
     }
-    Serial.find("\n");
+    Serial.find('\n');
   }
 }
 
