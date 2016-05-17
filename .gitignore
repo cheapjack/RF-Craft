@@ -27,3 +27,6 @@ board/gerbers/*.zip
 
 # don't need case/*.eps files
 case/*.eps
+
+# ds_store files for mac
+.DS_Store
