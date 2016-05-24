@@ -18,6 +18,8 @@ Its well worth reading Martin O'Hanlon's [Stuff About Code API Reference](http:/
 
 ### Out Of The Box
 
+![RF-Craft v1.1](https://cloud.githubusercontent.com/assets/128456/11501525/b5ac718a-982c-11e5-957e-e393b6b7c2ae.png)
+
 Your receiver and transmitter already have receiver.ino and button.ino uploaded to them but if your in the first workshop you need to change the group ID in the Arduino code so messages from other people dont get confused with each other but we will cover that later.
 
 Look at the 2 RF Craft boards in your pack; you will see some plastic jumpers next to the long ATMEGA328 chip: one will be connected to the `|--PI--|` side, and another connected to `|External|`. Pi is the `receiver` and External is the `button` and they have the associated code on there.
@@ -46,16 +48,16 @@ We are going to run you through the basic useage today and will provide further 
 
 We are going to start with a HAT receiver on board the PI: You generally talk to the server with the API like this:
 
-'''
+```
     from mcpi import minecraft
     mc = minecraft.Minecraft.create()
 
     mc.postToChat("Hello World!")
-'''
+```
 
 You can specify an exact server address and port in the `.create()` call like this
 
-'''
+```
 mc = minecraft.Minecraft.create("127.0.0.1")
 # This is the server running on your computer, the localhost address
 # or mc =minecraft.Minecraft.create("mc.fact.co.uk") 
@@ -65,11 +67,11 @@ mc = minecraft.Minecraft.create("127.0.0.1")
 # mc = minecraft.Minecraft.create()
 # By default the server will be a local instance of the CanaryMod server
 
-'''
+```
 
 Next you need to `import serial` at the top of the programme so we can receive our HAT messages
 
-'''
+```
 #########################
 # Pi/PC/Mac/Linux  mode #
 # RF-Craft HAT receiver #
@@ -97,7 +99,7 @@ ser = serial.Serial('/dev/ttyAMA0', 9600)
 # action "3", "OK"                                      #
 #                                                       #
 #########################################################
-'''
+```
 
 Then we can setup our button receive message
 
@@ -105,7 +107,7 @@ Then we can setup our button receive message
 
 Finally we make a simple loop to respond to the button1_received value as serial receives it
 
-'''
+```
 while True:
     # This reads the ser object you defined before, the serial connected to the HAT
     serialcommand = str(ser.readline())
@@ -115,7 +117,7 @@ while True:
         mc.entity.setTilePos(4, 76,20, -64)
         sleep(1)
         mc.camera.setFollow()
-'''
+```
 ### CanaryMod
 We may not get to this in the workshop but another way of working is to run a server on a bigger computer and send messages to that.
 Weve provided a server from the [CanaryMod Jenkins Repo](https://ci.visualillusionsent.net/) with a compatible plugin called Raspberry Juice and a CanaryMod server to send similar messages to a much more up to date world you can play with PC/Mac/Linux Minecraft running version `1.8`
@@ -130,7 +132,7 @@ CanaryMod and mcpi can't seem to agree on the coordinates of player positions an
 
 Likewise the FACT server can be equally confused and we ususally have to:
 
-'''
+```
 # translate mc coords on CloudMaker server for mcpi ones
 # add this to x
 mcx = 177
@@ -138,7 +140,7 @@ mcx = 177
 mcy = 64
 # - this from z
 mcz = 135
-'''
+```
 
 What you can also do is use your Pi as the bridge to sending messages to any minecraft server with the Raspberry Juice plugin installed like the FACT server at `mc.fact.co.uk`
 
