@@ -128,7 +128,18 @@ If you have JAVA installed all should be well, server will start and quit then e
 
 More details from Martin at his [Raspberry Juice Page](http://www.stuffaboutcode.com/2014/10/minecraft-raspberryjuice-and-canarymod.html)
 
-CanaryMod and mcpi can't seem to agree on the coordinates of player positions and we've found you need to add -256 to x, add 64 to y and add -8 to z to make your coordinates match with the Minceraft client
+CanaryMod and mcpi can't seem to agree on the coordinates of player positions and we've found you need to add -256 to x, add 64 to y and add -8 to z to make your coordinates match with the Minceraft client like this:
+
+```
+# translate mc coords on CanaryMod server for mcpi ones
+# add this to x
+mcx = -256
+# - add this to y
+mcy = 64
+# - add this to z
+mcz = -8
+```
+
 
 Likewise the FACT server can be equally confused and we ususally have to:
 
@@ -147,6 +158,42 @@ What you can also do is use your Pi as the bridge to sending messages to any min
 You can play with all of the code in Martin O'Hanlon and David Whale's excellent book **Adventures in Minecraft** which you can get from [the Wiley publishers website](http://eu.wiley.com/WileyCDA/Section/id-823690.html) and experiment with things like [this](https://github.com/martinohanlon/minecraft-demos)
 
 ### Basic Tools
+
+#### Multiple HATS & the Arduino IDE
+
+If in the unlikey event you have a room full of receiver HATs then a button press message will be received by all receivers! To avoid this you can modify the arduino `button.ino` and `receiver.ino` NETWORKID value
+
+Open the RF-Craft/arduino/button.ino sketch with your Arduino IDE
+
+Download it [from here](https://www.arduino.cc/)
+
+Connect the red FTDI cable adaptor to your button HAT and ensure that pins connect like this:
+```
+FTDI -> HAT
+RST -> RST
+RX -> RX
+TX -> TX
+VCC -> VIN
+CTS -> NC #(NC stands for not Connected)
+```
+
+You can use any coloured combos of **female** to **female** jumper cable you like as long as they follow the wiring above
+
+Now choose Tools/Board "Arduino/Genuino Uno" from the Arduino IDE menu
+Choose Tools/Port "cu.usbserial-####" 
+Choose Tools/Programmer "ArduinoISP"
+
+Change line 9 from `#define NETWORKID   87` to a number of your choice:
+`#define NETWORKID   88`
+
+Now Upload your code to the HAT. As it's a button it's 3 jumpers are on the |External| side. Now you need to do the same process for your receiver HAT
+
+Open RF-Craft/arduino/receiver/receiver.ino
+
+Change line 9 from `#define NETWORKID   87` to a number of your choice, but the same number as your button ie::
+`#define NETWORKID   88`
+
+**REMEMBER** to move your receiver HAT jumpers to |--PI--| to |External| or the Arduino IDE cant see it. Then swap back over once you have uploaded successfully. 
 
 #### Command Line
 
