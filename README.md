@@ -3,7 +3,7 @@
 
 ![rf-craft](https://cloud.githubusercontent.com/assets/128456/15471987/bc98131c-20f0-11e6-965d-3088c236a2c8.jpg)
 
-RF-Craft is a prototype Raspberry Pi [HAT](https://github.com/raspberrypi/hats) (Hardware Attached on Top) arduino clone to send `mcpi` API commands wirelessly to a minecraft server. RF-Craft is a spin-out of the [FACT](http://fact.co.uk/) [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) project inspired by resilient networks, [Martin OHanlon](https://github.com/martinohanlon/mcpi) where `mcpi` is available via Mojang, [Shrimping.it](http://start.shrimping.it) and Minecraft modders worldwide. 
+RF-Craft is a prototype Raspberry Pi [HAT](https://github.com/raspberrypi/hats) (Hardware Attached on Top) arduino clone to send `mcpi` API commands wirelessly to a minecraft server. RF-Craft was built for Ross Dalziels [OK Sparks Project](http://domesticscience.org.uk) and a spin-out of [FACT](http://fact.co.uk/) [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) research and inspired by resilient networks, [Martin OHanlon](https://github.com/martinohanlon/mcpi) where `mcpi` is available via Mojang, [Shrimping.it](http://start.shrimping.it) and Minecraft modders worldwide. 
 
 This Open source Radio messaging system uses the [RFM69HW tranceiver chip](https://lowpowerlab.com/shop/rfm69hw) and Frequency 868MHz to report to a central reciever to perform minecraft actions.
 

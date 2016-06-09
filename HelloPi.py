@@ -39,7 +39,7 @@ ser = serial.Serial('/dev/ttyAMA0', 9600)
 
 #mc.postToChat("Hello World!")
 mc.postToChat("Hello Workshop this is RF-Craft setting up")
-# assign your button ids
+# assign your button id strings
 button1_received = "1,1\r\n"
 button2_received = "2,1\r\n"
 button3_received = "3,1\r\n"
@@ -56,9 +56,9 @@ mc.camera.setFollow(me)
 
 while True:
     serialcommand = str(ser.readline())
-    if serialcommand == button5_received:
-        print "Got mail from Button 5"
-        mc.postToChat("Got mail from Button 5 saying " + serialcommand)
+    if serialcommand == button1_received:
+        print "Got mail from Button 1"
+        mc.postToChat("Got mail from Button 1 saying " + serialcommand)
         mc.entity.setTilePos(4, 76,20, -64)
         sleep(1)
         mc.camera.setFollow()
