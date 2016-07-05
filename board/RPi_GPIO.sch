@@ -1277,8 +1277,20 @@ U 1 1 577C904B
 P 10400 2700
 F 0 "SW3" H 9850 2850 60  0000 C CNN
 F 1 "SWITCH_4PDT" H 10650 1300 60  0000 C CNN
-F 2 "" H 10400 2700 60  0000 C CNN
-F 3 "" H 10400 2700 60  0000 C CNN
+F 2 "cloudmaker:SWITCH_4PDT_MFS401N" H 10400 2700 60  0001 C CNN
+F 3 "http://www.nidec-copal-electronics.com/e/catalog/switch/mfs.pdf" H 10400 2700 60  0001 C CNN
+F 4 "~" H 10400 2700 60  0001 C CNN "Characteristics"
+F 5 "4-pole, double throw slide switch" H 10400 2700 60  0001 C CNN "Description"
+F 6 "~" H 10400 2700 60  0001 C CNN "Package ID"
+F 7 "Digikey only" H 10400 2700 60  0001 C CNN "Source"
+F 8 "~" H 10400 2700 60  0001 C CNN "Critical"
+F 9 "1.5mm leads. Can be placed either way round" H 10400 2700 60  0001 C CNN "Notes"
+F 10 "MFS401N-2-Z" H 10400 2700 60  0001 C CNN "MFP"
+F 11 "DIGIKEY" H 10400 2700 60  0001 C CNN "supplier1_name"
+F 12 "~" H 10400 2700 60  0001 C CNN "supplier2_name"
+F 13 "http://www.digikey.co.uk/product-detail/en/copal-electronics-inc/MFS401N-2-Z/563-1568-ND/5086558" H 10400 2700 60  0001 C CNN "supplier1_link"
+F 14 "~" H 10400 2700 60  0001 C CNN "supplier2_link"
+F 15 "~" H 10400 2700 60  0001 C CNN "MFN"
 	1    10400 2700
 	1    0    0    -1  
 $EndComp
