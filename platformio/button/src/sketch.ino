@@ -192,16 +192,20 @@ void loop()
         radio.send(myPacket.node, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
         if (waitForAck()) {
           Serial.println(F("ACK"));
+          if (isGateway()) { morseLed(ACK); }
         } else {
           Serial.println(F("NAK"));
+          if (isGateway()) { morseLed(NAK); }
         }
       } else {
         Serial.print(F("NON"));
         Serial.println(node);
+        if (isGateway()) { morseLed(NON); }
       }
     } else {
       Serial.print(F("ERROR: "));
       Serial.println(code);
+      if (isGateway()) { morseLed(NO_DATA); }
     }
     Serial.find('\n');
   }
@@ -334,7 +338,7 @@ void loop()
         radio.sendACK();
       }
     }
-  }
+  }// end of isGateway
 }
 
 static bool waitForAck()
