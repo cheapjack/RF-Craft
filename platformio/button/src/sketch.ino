@@ -94,7 +94,9 @@ void setup()
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
   pinMode(BUTTON, INPUT);
-  digitalWrite(9, LOW);
+  digitalWrite(LED, HIGH);
+  delay(1000);
+  digitalWrite(LED, LOW);
 
 #if HARDWARE_VERSION > 1
   // check the external switch settings to find node_id
