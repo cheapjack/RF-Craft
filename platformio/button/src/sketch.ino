@@ -101,8 +101,6 @@ void setup()
 #if HARDWARE_VERSION > 1
   // check the external switch settings to find node_id
   this_node_id = check_node_id();
-  myPacket.node = this_node_id;
-  myPacket.action = 0;
 #else
   // check the eeprom for the stored settings
   byte node;
@@ -113,6 +111,8 @@ void setup()
     this_node_id = NODEID;
   }
 #endif
+  myPacket.node = this_node_id;
+  myPacket.action = 0;
 #if SERIAL_PRINT == 1
   Serial.print(F("node_id: "));
   Serial.println(this_node_id);
@@ -145,6 +145,14 @@ void loop()
       Serial.print(F("node_id: "));
       Serial.println(this_node_id);
     #endif
+    radio.initialize(FREQUENCY, this_node_id, NETWORKID);
+  #ifdef IS_RFM69HW
+    radio.setHighPower();
+  #endif
+    radio.encrypt(ENCRYPTKEY);
+    if (isButton()) {
+      radio.sleep(); //sleep right away to save power
+    }
   }
   #endif
 
