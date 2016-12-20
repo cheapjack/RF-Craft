@@ -6,8 +6,8 @@
 <a href="http://www.wtfpl.net/"><img
        src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
               width="80" height="15" alt="WTFPL" /></a>
-<img src="packaging/MoTpackage.png" width="800">
-<img src="https://cloud.githubusercontent.com/assets/128456/15471987/bc98131c-20f0-11e6-965d-3088c236a2c8.jpg" width="400">
+<br><img src="packaging/MoTpackage.png" width="800">
+<br><img align="center" src="https://cloud.githubusercontent.com/assets/128456/15471987/bc98131c-20f0-11e6-965d-3088c236a2c8.jpg" width="400">
 
 RF-Craft is a prototype Raspberry Pi [HAT](https://github.com/raspberrypi/hats) (**H**ardware **A**ttached on **T**op) arduino clone to send `mcpi` API commands wirelessly to a minecraft server. RF-Craft was built as part of Ross Dalziel's [OK Sparks Project](http://domesticscience.org.uk) and a spin-out from the [FACT](http://fact.co.uk/) [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) project research and inspired by resilient networks, the work of [Martin O'Hanlon](https://github.com/martinohanlon/mcpi) where `mcpi` is maintained via Mojang, [Shrimping.it](http://start.shrimping.it) and Minecraft modders worldwide. 
 
