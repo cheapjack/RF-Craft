@@ -1,15 +1,23 @@
 
 # RF-Craft
 
-![rf-craft](https://cloud.githubusercontent.com/assets/128456/15471987/bc98131c-20f0-11e6-965d-3088c236a2c8.jpg)
+![documentation status](https://img.shields.io/badge/documentation-incomplete-red.svg)
 
-RF-Craft is a prototype Raspberry Pi [HAT](https://github.com/raspberrypi/hats) (Hardware Attached on Top) arduino clone to send `mcpi` API commands wirelessly to a minecraft server. RF-Craft was built for Ross Dalziels [OK Sparks Project](http://domesticscience.org.uk) and a spin-out of [FACT](http://fact.co.uk/) [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) research and inspired by resilient networks, [Martin OHanlon](https://github.com/martinohanlon/mcpi) where `mcpi` is available via Mojang, [Shrimping.it](http://start.shrimping.it) and Minecraft modders worldwide. 
+<a href="http://www.wtfpl.net/"><img
+       src="http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png"
+              width="80" height="15" alt="WTFPL" /></a>
 
-This Open source Radio messaging system uses the [RFM69HW tranceiver chip](https://lowpowerlab.com/shop/rfm69hw) and Frequency 868MHz to report to a central reciever to perform minecraft actions.
+<img src="https://cloud.githubusercontent.com/assets/128456/15471987/bc98131c-20f0-11e6-965d-3088c236a2c8.jpg" width="400">
+
+RF-Craft is a prototype Raspberry Pi [HAT](https://github.com/raspberrypi/hats) (**H**ardware **A**ttached on **T**op) arduino clone to send `mcpi` API commands wirelessly to a minecraft server. RF-Craft was built as part of Ross Dalziel's [OK Sparks Project](http://domesticscience.org.uk) and a spin-out from the [FACT](http://fact.co.uk/) [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) project research and inspired by resilient networks, the work of [Martin O'Hanlon](https://github.com/martinohanlon/mcpi) where `mcpi` is maintained via Mojang, [Shrimping.it](http://start.shrimping.it) and Minecraft modders worldwide. 
+
+It is a board to help teach the **Internet of Things** and is inspired by the wider Minecraft community and culture where young people develop their own skillsets in order to take part in the games culture. In many ways it is the first game where players take control of elements of the games infrastructure independent of the original developer *Mojang* often becoming their own **sysadmins** using custom servers for games they want to play and with many transferable skills in coding and IoT. Minecraft is not an open source project but the game community have in a sense opened up elements of it to allow extensive modding and creative hacking. This adhoc technical *culture* is what is the most valuable, not the game itself or even it's potential to educate. It represents the development of an independent learning culture on it's own terms and should not be confused as a *service* or *platform* for formal mainstream education.
+
+This Open source Radio messaging system uses the [RFM69HW tranceiver chip](https://lowpowerlab.com/shop/rfm69hw)(based on the Lowpowerlab Moteino) and Frequency 868MHz to report to a central reciever to perform minecraft actions.
 
 Its designed as a Minecraft-of-Things deluxe development board bridging the gap between Pi and Arduino without depending on both. One design parameter was to have good signal penetration through Victorian concrete and the concrete of many arts centres and/or schools for the [Ok Sparks!](http://slyrabbit.net/ok-sparks) project by [Domestic Science](http://domesticscience.org.uk). 
 
-It was designed by artist [Ross Dalziel](http://cheapjack.org.uk) and open source engineer and technician in residence at [DoESLiverpool](http://doesliverpool.com) [Patrick Fenner AKA @DefProc](http://www.deferredprocrastination.co.uk/) and funded by [FACT](http://fact.co.uk/) and  [IT as a Utility (ITaaU) Network](http://www.itutility.ac.uk) for the [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) project
+It was designed by artist [Ross Dalziel](http://cheapjack.org.uk) and open source engineer and technician in residence at [DoESLiverpool](http://doesliverpool.com) [Patrick Fenner AKA @DefProc](http://www.deferredprocrastination.co.uk/) and funded by [FACT](http://fact.co.uk/) and  [IT as a Utility (ITaaU) Network](http://www.itutility.ac.uk) for the [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) project following 2 years of research into the game as a social learning tool.
 
 
 ### Features
