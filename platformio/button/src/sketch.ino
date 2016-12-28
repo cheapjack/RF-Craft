@@ -3,8 +3,6 @@
 #include <avr/power.h>
 #include <avr/sleep.h>
 
-#define HARDWARE_VERSION 2
-
 #define SERIAL_PRINT         1 //choose serial reporting on (1) or off (0)
 #define SERIAL_BAUD       9600
 
@@ -31,25 +29,21 @@ byte this_node_id = NODEID;
 #define DOT              200UL
 #define DASH             600UL // DOT*3
 
-enum radio_message_t {
-  QUERY_ID = 0,
-  SET_ID = -1,
-  BUTTON_PRESS = 1,
-  ERROR = 2,
-  OK = 3,
-  ACK = 4,
-  NAK = 5,
-  NON = 6,
-  NO_DATA = 7,
-  ANALOG_READ = 8,
-};
+#define QUERY_ID             0
+#define SET_ID              -1
+#define BUTTON_PRESS         1
+#define ERROR                2
+#define OK                   3
+#define ACK                  4
+#define NAK                  5
+#define NON                  6
+#define NO_DATA              7
 
 #define ENCRYPTKEY "changemechangeme"
 
 typedef struct {
   uint8_t action;
   uint8_t node;
-  //uint16_t reading;
 } Payload;
 Payload myPacket;
 Payload yourPacket;
@@ -89,20 +83,19 @@ void setup()
   PORTB |= B11111111;      // enable pullups on pins 8 to 13
 #if SERIAL_PRINT == 1
   Serial.begin(SERIAL_BAUD);
-  Serial.println(F("RFcrafting v0.2"));
 #endif
   pinMode(LED, OUTPUT);
   digitalWrite(LED, LOW);
   pinMode(BUTTON, INPUT);
-  digitalWrite(LED, HIGH);
-  delay(1000);
-  digitalWrite(LED, LOW);
+  digitalWrite(9, LOW);
 
-#if HARDWARE_VERSION > 1
-  // check the external switch settings to find node_id
-  this_node_id = check_node_id();
-#else
-  // check the eeprom for the stored settings
+  radio.initialize(FREQUENCY, NODEID, NETWORKID);
+#ifdef IS_RFM69HW
+  radio.setHighPower();
+#endif
+  radio.encrypt(ENCRYPTKEY);
+  radio.sleep(); //sleep right away to save power
+
   byte node;
   EEPROM.get(NODEID_LOCATION, node);
   if (isButton(node) || isGateway(node)) {
@@ -110,22 +103,8 @@ void setup()
   } else {
     this_node_id = NODEID;
   }
-#endif
   myPacket.node = this_node_id;
   myPacket.action = 0;
-#if SERIAL_PRINT == 1
-  Serial.print(F("node_id: "));
-  Serial.println(this_node_id);
-#endif
-
-  radio.initialize(FREQUENCY, this_node_id, NETWORKID);
-#ifdef IS_RFM69HW
-  radio.setHighPower();
-#endif
-  radio.encrypt(ENCRYPTKEY);
-  if (isButton()) {
-    radio.sleep(); //sleep right away to save power
-  }
 
   attachInterrupt(BUTTON, buttonCheck, FALLING);
 #if SERIAL_PRINT == 1
@@ -135,27 +114,6 @@ void setup()
 
 void loop()
 {
-  #if HARDWARE_VERSION > 1
-  if (check_node_id() != this_node_id) {
-    //someone just changed the id, we should change to reflect that
-    this_node_id = check_node_id();
-    myPacket.node = this_node_id;
-    myPacket.action = 0;
-    #if SERIAL_PRINT == 1
-      Serial.print(F("node_id: "));
-      Serial.println(this_node_id);
-    #endif
-    radio.initialize(FREQUENCY, this_node_id, NETWORKID);
-  #ifdef IS_RFM69HW
-    radio.setHighPower();
-  #endif
-    radio.encrypt(ENCRYPTKEY);
-    if (isButton()) {
-      radio.sleep(); //sleep right away to save power
-    }
-  }
-  #endif
-
   while (Serial.available() > 0) {
     char character = Serial.peek();
     int code = Serial.parseInt();
@@ -164,22 +122,19 @@ void loop()
       Serial.println(F("Accepted input"));
       Serial.println(F("(action),(node_id)"));
       Serial.println(F("where action can be: "));
-      #if HARDWARE_VERSION < 2
       Serial.println(F("-1, set_id"));
-      #endif
       Serial.println(F(" 0, query_id"));
       Serial.println(F(" 1, button press"));
       Serial.println(F(" 2, error"));
       Serial.println(F(" 3, OK"));
       Serial.println(F("and node_id can be: "));
-      Serial.println(F(" 1-16 for buttons"));
+      Serial.println(F(" 1-100 for buttons"));
       Serial.println(F(" 254 for the gateway"));
     } else if (code == QUERY_ID) {
       Serial.print(F("NODEID: "));
       Serial.println(this_node_id);
     } else if (code == SET_ID) {
       int node = Serial.parseInt();
-      #if HARDWARE_VERSION < 2
       if (isButton(node) || isGateway(node)) {
         this_node_id = node;
         EEPROM.put(NODEID_LOCATION, this_node_id);
@@ -187,7 +142,6 @@ void loop()
       }
       Serial.print(F("NODEID: "));
       Serial.println(this_node_id);
-      #endif
     } else if (code == BUTTON_PRESS) {
       if (isGateway()) {
         Serial.println(F("NOT_A_BUTTON"));
@@ -202,20 +156,16 @@ void loop()
         radio.send(myPacket.node, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
         if (waitForAck()) {
           Serial.println(F("ACK"));
-          if (isGateway()) { morseLed(ACK); }
         } else {
           Serial.println(F("NAK"));
-          if (isGateway()) { morseLed(NAK); }
         }
       } else {
         Serial.print(F("NON"));
         Serial.println(node);
-        if (isGateway()) { morseLed(NON); }
       }
     } else {
       Serial.print(F("ERROR: "));
       Serial.println(code);
-      if (isGateway()) { morseLed(NO_DATA); }
     }
     Serial.find('\n');
   }
@@ -227,23 +177,23 @@ void loop()
       //make a radio call
       myPacket.action = BUTTON_PRESS;
       detachInterrupt(BUTTON);
-      #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
       Serial.print("Calling... ");
       Serial.print(myPacket.node);
       Serial.print(":");
       Serial.print(myPacket.action);
-      #endif
+#endif
       radio.send(GATEWAYID, (const void*)(&myPacket), sizeof(myPacket), REQUESTACK);
       radioCalled = true;
       boolean listen_for_reply = LISTEN_FOR_REPLY;
       if (REQUESTACK) {
-        #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
         Serial.print(" - waiting for ACK...");
-        #endif
+#endif
         if (waitForAck()) {
-          #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
           Serial.print("ok!");
-          #endif
+#endif
           // pulse the onboard led
           morseLed(ACK);
           lastAction = millis();
@@ -251,9 +201,9 @@ void loop()
           digitalWrite(LED, LOW);
           //button = false;
         } else {
-          #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
           Serial.print("no reply...");
-          #endif
+#endif
           button = false;
           lastAction = millis();
           morseLed(NAK);
@@ -267,26 +217,26 @@ void loop()
             if (radio.receiveDone()) {
               //digitalWrite(LED, LOW);
               if (radio.DATALEN != sizeof(yourPacket)) {
-                #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
                 Serial.print("Invalid payload recieved");
-                #endif
+#endif
                 morseLed(NON);
               } else {
                 replied = true;
                 yourPacket = *(Payload*)radio.DATA;
-                #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
                 Serial.print("Recieved: ");
                 Serial.print(yourPacket.node);
                 Serial.print(":");
                 Serial.print(yourPacket.action);
                 Serial.println();
-                #endif
+#endif
               }
               if (radio.ACKRequested()) {
                 radio.sendACK();
-                #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
                 Serial.println("ACK sent");
-                #endif
+#endif
               }
               break;
             }
@@ -303,9 +253,9 @@ void loop()
               morseLed(yourPacket.action);
             }
           } else {
-            #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
             Serial.print("no message: ");
-            #endif
+#endif
             morseLed(NO_DATA);
           }
           digitalWrite(LED, LOW);
@@ -314,9 +264,9 @@ void loop()
       button = false;
       radio.sleep();
       attachInterrupt(BUTTON, buttonCheck, FALLING);
-      #if SERIAL_PRINT == 1
+#if SERIAL_PRINT == 1
       Serial.println();
-      #endif
+#endif
     lastAction = millis();
     }
 
@@ -336,19 +286,6 @@ void loop()
       //lastAction = millis();
     //}
   }// end of isButton
-
-  if (isGateway()) {
-    if (radio.receiveDone() && radio.DATALEN == sizeof(Payload)) {
-      yourPacket = *(Payload*)radio.DATA;
-      Serial.print(yourPacket.node);
-      Serial.print(",");
-      Serial.print(yourPacket.action);
-      Serial.println();
-      if (radio.ACKRequested()) {
-        radio.sendACK();
-      }
-    }
-  }// end of isGateway
 }
 
 static bool waitForAck()
@@ -369,36 +306,6 @@ void buttonCheck()
     button = !button;
     radioCalled = false;
   }
-}
-
-uint8_t check_node_id() {
-  pinMode(A6, INPUT);
-  // have to use analog here as A6 and A7 are analog only
-  if (analogRead(A6) < 500) {
-    // we're the gateway
-    //this_node_id = 254;
-    return GATEWAYID;
-  }
-
-  uint8_t node = 0;
-  // then we must be a node
-  if (digitalRead(4) == LOW) {
-    node = node + 1;
-  }
-  if (digitalRead(5) == LOW) {
-    node = node + 2;
-  }
-  if (digitalRead(6) == LOW) {
-    node = node + 4;
-  }
-  if (digitalRead(7) == LOW) {
-    node = node + 8;
-  }
-  if (node == 0) {
-    node = 16;
-  }
-
-  return node;
 }
 
 void pulseLed(unsigned long time)
