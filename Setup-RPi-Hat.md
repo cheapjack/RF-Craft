@@ -1,10 +1,11 @@
 # Setup RPi for use with HATS
 
-You need to disable serial on your Pi with 
+You need to disable serial console on your Pi and enable UART with 
 `sudo raspi-config`
 
 Select Advanced Options/Serial and disable the serial login shell or Interface Options/Serial and disable the serial login shell but enable the hardware(UART)
 
+You may also have to follow the below [instructions](https://www.hackster.io/fvdbosch/uart-for-serial-console-or-hat-on-raspberry-pi-3-5be0c2) from [Frederick Vandenbosch](https://www.hackster.io/fvdbosch)
 
 ## Raspberry Pi 3 & Raspbian Jessie 2017
 
