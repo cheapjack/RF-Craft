@@ -5,6 +5,8 @@ You need to disable serial console on your Pi and enable UART with
 
 Select Advanced Options/Serial and disable the serial login shell or Interface Options/Serial and disable the serial login shell but enable the hardware(UART)
 
+If you are not receiving messages on your **receiver HAT** in **RPI mode** from your **RF-Craft HAT** in **EXT** transmitter mode with a NODE ID of 1 ie (1,1)
+
 You may also have to follow the below [instructions](https://www.hackster.io/fvdbosch/uart-for-serial-console-or-hat-on-raspberry-pi-3-5be0c2) from [Frederick Vandenbosch](https://www.hackster.io/fvdbosch)
 
 ## Raspberry Pi 3 & Raspbian Jessie 2017
@@ -59,7 +61,10 @@ Reboot to apply the change:
 
 `pi@raspberrypi:~ $ sudo reboot`
 
-Verify by using screen
+
+### Testing
+
+Verify it all works by using screen
 Install it first if you dont have it; its handy!
 `sudo apt-get install screen`
 
@@ -67,5 +72,9 @@ then listen on the `/dev/ttyS0` serial port at 9600 baudrate that your HAT commu
 
 `screen /dev/ttyS0 9600`
 
-Activate and power your **RF-Craft HAT** in **EXT** mode with a **NODE** value of 1-15 and you will see the message `NODEID,MESSAGE` so `1,1` is `NODEID=1,On`
+Power your other **RF-Craft HAT** in **EXT** mode and set a **NODE** value of 1 using the 1234 switch (next to the analoginput block on the board), and you should receive the message `1,1` which means `NODEID=1,Button Pressed`
+
+**TIP** To set a node ID of 1 Just set the node switch 1 to ON which is 1 in binary
+or for a node ID of 3 set the node switch 1 and 2 to ON, 3 in binary.
+
 
