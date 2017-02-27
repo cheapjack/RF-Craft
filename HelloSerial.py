@@ -2,7 +2,13 @@
 
 import serial
 
-ser = serial.Serial('/dev/ttyAMA0', 9600)
+#disable serial from instructions in Setup-RPi-Hat.md
+#if using with RPi 2 or earlier with pre 2016 Raspbian Jessie
+#ser = serial.Serial('/dev/ttyAMA0', 9600)
+#if using a UART serial adaptor on Unix/Mac
+#ser = serial.Serial('/dev/tty.SLAB_USBtoUART', 9600)
+#if using RPi 3 with Raspbian Jessie 2016 and onwards releases follow instructions to disable serial and enable UART from instructions in Setup-RPi-Hat.md
+ser = serial.Serial('/dev/ttyS0', 9600)
 
 
 # assign your button id strings
