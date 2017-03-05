@@ -64,6 +64,28 @@ To stop it press `ctrl` & `C`
 
 Then you can edit it with a text editor like [vim](http://vim.rtorr.com/) Install **vim** with `pi$ sudo apt-get install vim` or edit and run the code with the built-in RPi IDLE Python IDE on the Pi.
 
+### Testing
+
+Before thinking about Minecraft lets check we are receiving serial.
+
+Check you've got serial installed:
+`sudo apt-get install python-serial`
+
+Verify it all works by using screen
+Install it first if you dont have it; its handy!
+`sudo apt-get install screen`
+
+then with your HAT connected in RPI mode or UART connected no another device listen on the `/dev/ttyS0` serial port at 9600 baudrate that your HAT communicates with. This port varies system to system.
+
+`screen /dev/ttyS0 9600`
+
+Power your other **RF-Craft HAT** in **EXT** mode and set a **NODE** value of 1 using the 1234 switch (next to the analoginput block on the board), and you should receive the message `1,1` which means `NODEID=1,Button Pressed`
+
+**TIP** To set a node ID of 1 Just set the node switch 1 to ON which is 1 in binary
+or for a node ID of 3 set the node switch 1 and 2 to ON, 3 in binary.
+
+Now try `HelloSerial.py` on your Pi with `python HelloSerial.py`
+
 
 #### Hello World!
 
