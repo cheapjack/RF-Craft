@@ -11,17 +11,19 @@
 
 RF-Craft is a prototype Raspberry Pi [HAT](https://github.com/raspberrypi/hats) (**H**ardware **A**ttached on **T**op) arduino clone to send `mcpi` API commands wirelessly to a minecraft server. RF-Craft was built as part of Ross Dalziel's [OK Sparks Project](http://domesticscience.org.uk) and a spin-out from the [FACT](http://fact.co.uk/) [CloudMaker](http://www.fact.co.uk/projects/cloudmaker-making-minecraft-real.aspx) project research and inspired by resilient networks, the work of [Martin O'Hanlon](https://github.com/martinohanlon/mcpi) where `mcpi` is maintained via Mojang, [Shrimping.it](http://start.shrimping.it) and Minecraft modders worldwide. 
 
+Full info from the [CloudMaker Repo](https://github.com/cheapjack/CloudMaker)
+
 It is a board to help teach the **Internet of Things** and is inspired by the wider Minecraft community and culture where young people develop their own skillsets in order to take part in the games culture. In many ways it is the first game in mainstream consciousness where players take control of elements of the games infrastructure, independent of the original developer *Mojang*, often becoming their own **sysadmins** using custom servers for games they want to play and as a consequence, with considerable transferable skills in coding and IoT. 
 
 Minecraft is not an open source project but the game community have, in a sense, opened up elements of it to allow extensive modding and creative hacking. This adhoc technical *culture* is what is the most valuable, not the game itself or even it's potential to educate, which is a consequence of this. After a good deal of research we've concluded that Minecraft is more representative of an independent learning culture and ecosystem on it's own and others borrowed terms and with it's own diversity. This is exciting but not necessarily always helpful to educators or learners.  
 
-With experience, we think it should not be confused with a universal *service* or *platform* that could be easily exploited for formal mainstream education.
+With experience, we think it should not really be confused with a universal *service* or *platform* that could be easily exploited for formal mainstream education.
 
 Current owners, Microsoft are developing an education *platform* through [Minecraft Education](https://education.minecraft.net/). This is a very specific version of the game and so has very specific requirements to use. In this sense it *is* a platform, but like many platforms in the real world once you are on one its hard to jump to another without ladders, ropes or expensive jetpacks. We've all played on Parkour servers so we know how hard that can be!
 
 We've tried to package up a range of resources, examples and hardware that could allow you to play with connecting versions of the game with the real world with sensors and buttons. 
 
-Finding the right version of the game to experiment with is difficult and has it's own quite steep and confusing learning curve. We recommend keeping it simple and experimenting on a Pi. The Pi version is version 1.0 or something. It's simple and it's not changing. It's also free. There's an established community out there using the python [mcpi API](https://github.com/martinohanlon/mcpi) for it like [Martin O'Hanlon](https://github.com/martinohanlon/) and making cool stuff for it like [PatternCraft](http://patterncraft.co/)
+Finding the right version of the game to experiment with is difficult and has it's own quite steep and confusing learning curve. We recommend keeping it simple and experimenting on a Pi. The Pi version is version 1.0 or something. It's simple and it's not changing. It's also free. There's an established community out there using the python [mcpi API](https://github.com/martinohanlon/mcpi) for it like [Martin O'Hanlon](https://github.com/martinohanlon/) and making cool stuff for it like [PatternCraft](http://patterncraft.co/).
 
 So we've tried keeping it simple by making simple Raspeberry Pi HATS that can transmit and receive serial messages which you can parse into commands in the Raspberry Pi version of Minecraft you can make simpel HelloWorld Text Adventures, [Models of Railways](https://github.com/cheapjack/RF-Rail-Craft) or all the way up to interacting with [data](https://github.com/cheapjack/MoT), the [International Space Station](https://github.com/astro-pi/SpaceCRAFT) to punchard readers that make music just like PatternCraft.
 
@@ -47,7 +49,7 @@ It was designed by artist [Ross Dalziel](http://cheapjack.org.uk) and open sourc
  * Need radio arduinos for IoT prototype? Sick of Minecraft? Caps falling out of your shrimp? No problem use elsewhere!
  * Send Commands to a Receiver HAT and your Raspbians local Minecraft Pi Edition server
  * Send Commands to the Rasperry Juice Plugin on a CanaryMod server
- * Send Commands to the Rasperry Juice Plugin on `mc.fact.co.uk:25562`
+ * Send Commands to the Rasperry Juice Plugin on `mc.fact.co.uk:25589`
 
 ### Message Format
 

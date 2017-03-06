@@ -5,7 +5,7 @@
 
 **RF-Craft** is a *simple* messaging system to send serial messages by low power radio to a Raspberry Pi when attached as a HAT or any serial connection that uses a UART adaptor. Refer to Setup-RPi-Hat.md for setup instructions.
 
-It comes in a receiver and transmitter pair. It's an expensive build and you would end up selling them for £39 cost. So we are not selling them but giving them to educators and artists and groups to play with. However you can build them yourself as all the details are in this repo. You'll need some time and experience so its not a quick start but going through that process will set you up for building almost anything; but it's beyond our scope to help you much with that. RF-Craft is essentially an experiment in designing physical IoT devices with young people to communicate with  Minecraft. Most of the learning here is about participatory ecosystems in the design process both for users and developers. 
+It comes in a receiver and transmitter pair. RF-Craft is essentially an experiment in designing physical IoT devices with young people to communicate with  Minecraft. Most of the learning here is about participatory ecosystems in the design process both for users and developers. 
 
 But we wanted RF-Craft to let you do anything with these messages. So no Apps, complicated bluetooth pairing or custom software just open-source simplicity and `serial` communication the most basic and so univerally useful communication protocol. In our case we are using python-serial to parse `serial` messages into commands to `mcpi` a python API for the Raspberry Pi version of Minecraft because there is currently a community of young people and educators doing that. But equally they could move a robot, make a cup of tea or send a tweet
 
@@ -13,8 +13,8 @@ But we wanted RF-Craft to let you do anything with these messages. So no Apps, c
 
 #### Out Of The Box
 
-Your **receiver** is the **RF-Craft HAT** without battery flashed with the sketch `receiver.ino` 
-Your **transmitter** is the **RF-Craft HAT** with a battery pack flashed with the sketch `button.ino` 
+ * Your **receiver** is the **RF-Craft HAT** without battery flashed with the sketch `receiver.ino` 
+ * Your **transmitter** is the **RF-Craft HAT** with a battery pack flashed with the sketch `button.ino` 
 
 If you are within range of other transmitters you may want to change the `NETWORK_ID` and the `ENCRYPTKEY` in the Arduino code on both so messages from other people dont get confused with each other but we will cover that later. You will need a UART interface attached to the P1 UART jumpers next to the external power input [available here](http://start.shrimping.it/kit/cp2102.html)
 
@@ -24,9 +24,9 @@ Look at the 2 RF Craft boards in your pack; you will see a sliding switch next t
 
 **EXT** Pi is the **button** mode and lets you set an ID number with the set of 4 switches marked ON APEMS 1234. Set these switches off and on in binary to get `NODE_ID` numbers 1-15. 
 
-So to get `NODE_ID 1` set switch 1 to *on* and 2-4 to *off* 
-So to get `NODE_ID 2` set switch 2 to *on* and 1,3 & 4 to *off* 
-To get `NODE_ID 3` set switch 1 & 2 to *on* and 3 & 4 to *off* and so on. 
+ * So to get `NODE_ID 1` set switch 1 to *on* and 2-4 to *off* 
+ * So to get `NODE_ID 2` set switch 2 to *on* and 1,3 & 4 to *off* 
+ * To get `NODE_ID 3` set switch 1 & 2 to *on* and 3 & 4 to *off* and so on. 
 
 Now you can use the button to send a message to your receiver.
 
@@ -38,7 +38,7 @@ RF-Craft works can work in a few ways
 
  * Sending messages to a running Minecraft instance on board the Pi with a `receiver` HAT `Hello.py`
  * Sending messages to a local CanaryMod Server `HelloCanary.py`
- * Sending messages to the FACT Minecraft server at `mc.fact.co.uk:25565` `HelloCloudMaker.py`
+ * Sending messages to the FACT Minecraft server at `mc.fact.co.uk:25589` `HelloCloudMaker.py`
  * Sending messages to each other, arduino to arduino and interacting with Serial on another computer using a UART serial adaptor for arduino
  * Sending & receiving serial messages with python to trigger text and other things. Check out Adventures-in-RFCraft.md
 
