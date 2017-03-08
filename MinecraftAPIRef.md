@@ -309,7 +309,6 @@ print direction
 ```
 
 ### Minecraft.camera
-```
 
 #### .setNormal(entityId)
 "Set camera mode to normal Minecraft view ([entityId])"
